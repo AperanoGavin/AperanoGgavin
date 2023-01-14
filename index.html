@@ -45,6 +45,20 @@
             line-height: 1.5;
             margin-bottom: 10px;
         }
+        
+        .col {
+            float: left;
+            width: 33.33%;
+            padding: 0px 15px;
+            box-sizing: border-box;
+        }
+        /* Utilisez une classe pour l'élément conteneur */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
         /* Utilisez des classes pour les éléments à afficher en colonnes */
     </style>
 </head>
