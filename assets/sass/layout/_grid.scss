@@ -1,0 +1,12 @@
+// Définir le nombre de colonnes dans la grille
+$grid-columns: 12;
+// Calcule la largeur de chaque colonne
+$column-width: calc(100% / $grid-columns);
+//$column-width: math.div(100%, $grid-columns);
+// Boucle sur le nombre de colonnes pour générer des classes
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        width: $column-width * $i;
+        float: left;
+    }
+}
