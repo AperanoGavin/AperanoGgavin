@@ -3,7 +3,10 @@
 <h1>Framework CSS</h1>
 
 ##see all branch 
-git config --global remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+
+git branch -vv
+
 
 ##for run sass
 sass ./assets/sass/main.scss  ./assets/css/main.css
