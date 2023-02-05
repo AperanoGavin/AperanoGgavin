@@ -1,3 +1,10 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 ul,
 ol {
   margin-bottom: 20px;
@@ -82,6 +89,7 @@ button.secondary:active {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -93,6 +101,23 @@ a {
 }
 .link:active {
   color: #3395ff;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
 }
 
 .footer {
@@ -110,7 +135,8 @@ a {
 .navbar {
   background-color: #333;
   height: 60px;
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

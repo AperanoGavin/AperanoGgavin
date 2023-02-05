@@ -1,0 +1,15 @@
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+}
