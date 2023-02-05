@@ -95,6 +95,36 @@ a {
   color: #3395ff;
 }
 
+.navbar {
+  background-color: #333;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
 .col-1 {
   width: 8.3333333333%;
   float: left;
