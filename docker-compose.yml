@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  web_symfony:
+    build: 
+          context: .
+          dockerfile: Dockerfile
+    ports:
+      - "800:80"
+    restart: always
+    volumes:
+      - .:/var/www/html
+    
