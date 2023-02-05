@@ -31,4 +31,14 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: #007bff;
+}
+.link:hover {
+  color: #0062cc;
+}
+.link:active {
+  color: #3395ff;
+}
+
 /*# sourceMappingURL=main.css.map */

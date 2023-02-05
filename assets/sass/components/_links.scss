@@ -1,4 +1,14 @@
-//remove  underline from links
-a {
-    text-decoration: none;
-}
+        //remove  underline from links
+        a {
+            text-decoration: none;
+        }
+        
+        .link {
+            color: $primary-color;
+            &:hover {
+                color: darken($primary-color, 10%);
+            }
+            &:active {
+                color: lighten($primary-color, 10%);
+            }
+        }
