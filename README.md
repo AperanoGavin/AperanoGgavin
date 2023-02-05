@@ -12,4 +12,4 @@ git branch -vv
 sass ./assets/sass/main.scss  ./assets/css/main.css
 
 
-vous pouvez voir le site en ligne sur [AperanoGavin.github.io](https://gavinaperano.me/)
+vous pouvez voir le site en ligne sur [website](https://gavinaperano.me/)
