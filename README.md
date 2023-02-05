@@ -9,4 +9,4 @@ git config --global remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
 sass ./assets/sass/main.scss  ./assets/css/main.css
 
 
-vous pouvez voir le site en ligne sur [AperanoGavin.github.io](https://aperanogavin.github.io/)
+vous pouvez voir le site en ligne sur [AperanoGavin.github.io](https://aperanogavin.me/)
