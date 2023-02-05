@@ -27,4 +27,8 @@ button.secondary:active {
   background-color: #868e96;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=main.css.map */
