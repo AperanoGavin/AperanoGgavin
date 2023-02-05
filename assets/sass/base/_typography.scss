@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Arial Bold Italic';
+    src: url('fonts/ARIALBI.TTF') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 16px;
+    font-weight: bold;
+    color: blue;
+}
+
+.p-italic {
+    font-family: 'Arial Bold Italic', sans-serif;
+    font-style: italic;
+}
