@@ -169,6 +169,10 @@ a {
   padding: 0 10px;
 }
 
+.navbar .button {
+  margin: 0 10px;
+}
+
 .navbar-brand {
   font-size: 1.5em;
   color: #fff;
