@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #333;
+    background-color: #fff;
     height: 60px;
     ///width: 100%;
     max-width: 100%;
@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+}
+
+.navbar a {
+    color: #000;
 }
 
 .navbar-brand {
