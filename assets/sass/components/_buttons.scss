@@ -26,3 +26,33 @@ button.secondary {
         background-color: lighten($secondary-color, 10%);
     }
 }
+
+button.warning {
+    background-color: $warning-color;
+    &:hover {
+        background-color: darken($warning-color, 10%);
+    }
+    &:active {
+        background-color: lighten($warning-color, 10%);
+    }
+}
+
+button.info {
+    background-color: $info-color;
+    &:hover {
+        background-color: darken($info-color, 10%);
+    }
+    &:active {
+        background-color: lighten($info-color, 10%);
+    }
+}
+
+button.info {
+    background-color: $info-color;
+    &:hover {
+        background-color: darken($info-color, 10%);
+    }
+    &:active {
+        background-color: lighten($info-color, 10%);
+    }
+}
