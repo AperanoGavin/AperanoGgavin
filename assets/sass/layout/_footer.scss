@@ -1,11 +1,25 @@
 .footer {
-    background-color: #333;
-    height: 60px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    color: white;
-    font-size: 14px;
+}
+
+.footer-menu li {
+    margin-right: 20px;
+}
+
+.footer-menu a {
+    color: #333;
+    text-decoration: none;
 }
