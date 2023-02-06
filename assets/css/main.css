@@ -159,12 +159,14 @@ a {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 20px;
 }
 
 .navbar a {
   color: #000;
+  font-size: 1.4em;
+  padding: 0 10px;
 }
 
 .navbar-brand {
@@ -214,6 +216,36 @@ button.secondary:hover {
 }
 button.secondary:active {
   background-color: #868e96;
+}
+
+button.warning {
+  background-color: #ffc107;
+}
+button.warning:hover {
+  background-color: #d39e00;
+}
+button.warning:active {
+  background-color: #ffce3a;
+}
+
+button.info {
+  background-color: #17a2b8;
+}
+button.info:hover {
+  background-color: #117a8b;
+}
+button.info:active {
+  background-color: #1fc8e3;
+}
+
+button.info {
+  background-color: #17a2b8;
+}
+button.info:hover {
+  background-color: #117a8b;
+}
+button.info:active {
+  background-color: #1fc8e3;
 }
 
 a {

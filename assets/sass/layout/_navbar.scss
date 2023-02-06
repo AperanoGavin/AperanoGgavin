@@ -6,12 +6,15 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
 }
 
 .navbar a {
     color: #000;
+    //faut que les liens soient un peu plus gros
+    font-size: 1.4em;
+    padding: 0 10px;
 }
 
 .navbar-brand {
