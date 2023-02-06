@@ -47,12 +47,12 @@ button.info {
     }
 }
 
-button.info {
-    background-color: $info-color;
+button.success {
+    background-color: $success-color;
     &:hover {
-        background-color: darken($info-color, 10%);
+        background-color: darken($success-color, 10%);
     }
     &:active {
-        background-color: lighten($info-color, 10%);
+        background-color: lighten($success-color, 10%);
     }
 }
