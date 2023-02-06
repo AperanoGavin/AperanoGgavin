@@ -1,0 +1,19 @@
+{
+    "name": "aperanogavin.github.io",
+    "version": "1.0.0",
+    "description": "for s1",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AperanoGavin/AperanoGavin.github.io.git"
+    },
+    "author": "gaveen",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AperanoGavin/AperanoGavin.github.io/issues"
+    },
+    "homepage": "https://github.com/AperanoGavin/AperanoGavin.github.io#readme"
+}

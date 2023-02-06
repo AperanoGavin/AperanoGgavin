@@ -1,7 +1,7 @@
 version: '3.1'
 
 services:
-  web_symfony:
+  web_s1:
     build: 
           context: .
           dockerfile: Dockerfile
@@ -10,4 +10,3 @@ services:
     restart: always
     volumes:
       - .:/var/www/html
-    
