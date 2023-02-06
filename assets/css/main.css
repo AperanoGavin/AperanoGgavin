@@ -20,6 +20,11 @@ ol {
   margin-left: auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @font-face {
   font-family: "Arial Bold Italic";
   src: url("fonts/ARIALBI.TTF") format("truetype");
