@@ -1,156 +1,174 @@
-    nav {
-        display: flex;
-        padding: 0% 10%;
-        justify-content: space-between;
-        align-items: center;
-        //raputer une bordure en bas en gris
-        border-bottom: 1px solid rgba(225, 218, 218, 0.775);
-    }
-    
-    .navv {
-        display: flex;
-        padding: 2% 6%;
-        align-items: center;
-        justify-content: flex-start;
-        justify-content: space-between;
-    }
-    
-    .navv-link {
-        flex: 1;
-        text-align: right;
-    }
-    
-    .navv-link ul li {
-        list-style: none;
-        display: inline-block;
-        padding: 8px 12px;
-        position: relative;
-    }
-    
-    .navv-link ul li a {
-        text-decoration: none;
-        color: #000;
-        font-size: 13px;
-    }
-    
-    .nav-link {
-        flex: 1;
-        text-align: right;
-    }
-    
-    .nav-user {
-        display: none;
-    }
-    
-    .nav-link ul li {
-        list-style: none;
-        display: inline-block;
-        padding: 8px 12px;
-        position: relative;
-    }
-    
-    .nav-link ul li a {
-        text-decoration: none;
-        color: #000;
-        font-size: 13px;
-    }
-    
-    .nav-link ul li button {
-        text-decoration: none;
-        list-style: none;
-        display: inline-block;
-        padding: 8px 12px;
-        position: relative;
-    }
-    
-    .nav-link ul li::after {
-        content: "";
-        width: 0%;
-        height: 2px;
-        background: #000;
-        display: block;
-        margin: auto;
-        transition: 0.5s;
-    }
-    
-    .nav-link ul li:hover::after {
-        width: 100%;
-    }
-    
-    nav .fas {
-        display: none;
-    }
-    
-    .fa-bars {
-        display: none;
-    }
-    
-    @media(max-width:700px) {
-        .text-box h1 {
-            font-size: 20px;
+        nav {
+            display: flex;
+            padding: 0% 10%;
+            justify-content: space-between;
+            align-items: center;
+            //raputer une bordure en bas en gris
+            border-bottom: 1px solid rgba(225, 218, 218, 0.775);
         }
-        .nav-link ul li {
-            display: block;
+        
+        .navv {
+            display: flex;
+            padding: 2% 6%;
+            align-items: center;
+            justify-content: flex-start;
+            justify-content: space-between;
         }
+        
+        .navv-link {
+            flex: 1;
+            text-align: right;
+        }
+        
+        .navv-link ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        
+        .navv-link ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 13px;
+        }
+        
         .nav-link {
-            position: absolute;
-            //background blanc kaki 
-            background: rgba(255, 255, 255, 0.073);
-            height: 100vh;
-            top: 0;
-            right: -200px;
-            text-align: left;
-            z-index: 2;
-            transition: 1s;
+            flex: 1;
+            text-align: right;
         }
+        
+        .nav-user {
+            display: none;
+        }
+        
+        .nav-link ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        
+        .nav-link ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 13px;
+        }
+        
+        .nav-link ul li button {
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        
+        .nav-link ul li::after {
+            content: "";
+            width: 0%;
+            height: 2px;
+            background: #000;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        
+        .nav-link ul li:hover::after {
+            width: 100%;
+        }
+        
         nav .fas {
-            display: block;
-            color: #000;
-            margin: 10px;
-            font-size: 22px;
-            cursor: pointer;
+            display: none;
         }
+        
         .fa-bars {
-            display: block;
-            color: #000;
-            margin: 10px;
-            font-size: 22px;
-            cursor: pointer;
+            display: none;
         }
-        .nav-link ul {
-            padding: 30px;
+        
+        .fa-user {
+            display: none;
         }
-    }
-    /* .navbar {
-    background-color: #fff;
-    height: 60px;
-    ///width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-}
-
-.navbar a {
-    color: #000;
-    //faut que les liens soient un peu plus gros
-    font-size: 1em;
-    padding: 0 10px;
-}
-
-//les boutons à l'intérieur de la navbar  soient center par rapport au lien de la navbar
-.navbar .button {
-    margin: 0 10px;
-    font-size: 1em;
-}
-
-@media screen and (max-width: 767px) {
-    .navbar .button {
-        display: block;
-    }
-    .navbar a {
-        display: none;
-    }
-} */
+        
+        @media(max-width:700px) {
+            .text-box h1 {
+                font-size: 20px;
+            }
+            .nav-link ul li {
+                display: block;
+            }
+            .nav-link {
+                position: absolute;
+                //background blanc kaki 
+                background: rgba(255, 255, 255, 0.073);
+                height: 100vh;
+                top: 0;
+                right: -200px;
+                text-align: left;
+                z-index: 2;
+                transition: 1s;
+            }
+            nav .fas {
+                display: block;
+                color: #000;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            .fa-bars {
+                display: block;
+                color: #000;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            .nav-link ul {
+                padding: 30px;
+            }
+            //recupère l'id button-nav
+            #button-nav {
+                display: none;
+            }
+            .fa-user {
+                display: block;
+                //il faut qu'il ne bouge pas
+                position: absolute;
+                //il faut le centrer
+                left: 50%;
+                cursor: pointer;
+            }
+            .nav-user ul li {
+                display: block;
+            }
+            .nav-user ul {
+                padding: 30px;
+            }
+            .nav-user {
+                display: block;
+                position: absolute;
+                top: -200%;
+                right: 0;
+                background: #fff;
+                width: 200px;
+                text-align: left;
+                padding: 10px 0;
+                transition: 0.5s;
+                //le deplacer vers le bas
+                transform: translateY(24%);
+            }
+            .nav-user ul li a {
+                display: block;
+                padding: 10px 20px;
+                color: #000;
+                text-decoration: none;
+            }
+        }
+        
+        //une fois depasser 700px on  recache fa-bar et fa-user
+        @media(min-width:700px) {
+            .fa-bars {
+                display: none;
+            }
+            .fa-user {
+                display: none;
+            }
+        }
