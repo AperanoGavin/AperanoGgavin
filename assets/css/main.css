@@ -218,32 +218,6 @@ nav {
   border-bottom: 1px solid rgba(118, 110, 110, 0.775);
 }
 
-.navv {
-  display: flex;
-  padding: 2% 6%;
-  align-items: center;
-  justify-content: flex-start;
-  justify-content: space-between;
-}
-
-.navv-link {
-  flex: 1;
-  text-align: right;
-}
-
-.navv-link ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-
-.navv-link ul li a {
-  text-decoration: none;
-  color: #000;
-  font-size: 13px;
-}
-
 .nav-link {
   flex: 1;
   text-align: right;
