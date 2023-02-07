@@ -41,22 +41,29 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
                     </li>
-                    <button class="button-warning">Se connecter</button>
-                    <button class="button-success">Commander</button>
+
+                    <button class="button-warning" id="button-nav">Se connecter</button>
+                    <button class="button-success" id="button-nav">Commander</button>
+
                 </ul>
             </div>
             <div class="nav-user" id="navUser">
-                <i class="fa-solid fa-user" onclick="ShowCon()"></i>
+                <i class="fas fa-times" onclick="hideCon()"></i>
                 <ul>
                     <li>
-                        <a href="./index.html"> Se connecter</a>
+                        <a href="./index.html"> Connexion</a>
                     </li>
                     <li>
-                        <a href="./index.html"> S'inscrire</a>
+                        <a href="./index.html"> Inscription</a>
                     </li>
+
                 </ul>
             </div>
+
+            <i class="fa-solid fa-user" id="user" onclick="ShowCon()"></i>
             <i class="fa-solid fa-bars" id="humberger" onclick="showMenu()"></i>
+
+
         </nav>
 
 
@@ -120,6 +127,7 @@
         var navLink = document.getElementById("navLink");
         var menu = document.getElementById("humberger");
         var navUser = document.getElementById("navUser");
+        var user = document.getElementById("user");
 
         function showMenu() {
             navLink.style.right = "0";
@@ -134,7 +142,17 @@
         }
 
         function ShowCon() {
+            navUser.style.top = "0";
+            //rendre le user menu invisible
+            user.style.display = "none";
 
+
+        }
+
+        function hideCon() {
+            navUser.style.top = "-300px";
+            //rendre le user menu visible
+            user.style.display = "block";
 
         }
     </script>
