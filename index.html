@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Framework css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6721551398549890" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -16,7 +20,6 @@
             <a href="./index.html"> <img class="logo" src="./assets/images/logo_s1.png"></a>
             <div class="nav-link" id="navLink">
                 <i class="fas fa-times" onclick="hideMenu()"></i>
-
                 <ul>
                     <li>
                         <a href="./index.html"> Nous restaurants</a>
@@ -32,7 +35,7 @@
                     </li>
                 </ul>
             </div>
-            <i class="fas fa-bars" onclick="showMenu()"></i>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
 
 
@@ -91,6 +94,20 @@
         <!-- contenu du footer -->
         Copyright &copy; 2023 Mon site web s1
     </footer>
+
+    <script>
+        var navLink = document.getElementById("navLink");
+
+        function showMenu() {
+            navLink.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLink.style.right = "-200px";
+        }
+    </script>
+    <!--<script type="text/javascript" src="./assets/scripts/menu.js"></script>-->
+
 </body>
 
 </html>

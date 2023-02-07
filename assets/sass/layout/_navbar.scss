@@ -1,7 +1,7 @@
 nav {
     display: flex;
     padding: 2% 6%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     //rajouter des marges en haut et en bas
     margin: 0 0 0 0;
@@ -32,11 +32,6 @@ nav {
     text-decoration: none;
     color: #000;
     font-size: 13px;
-}
-
-img.logo {
-    width: 100px;
-    height: 100px;
 }
 
 .nav-link {
@@ -71,6 +66,14 @@ img.logo {
     width: 100%;
 }
 
+nav .fas {
+    display: none;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
 @media(max-width:700px) {
     .text-box h1 {
         font-size: 20px;
@@ -80,7 +83,8 @@ img.logo {
     }
     .nav-link {
         position: absolute;
-        background: #f4367f;
+        //background blanc kaki 
+        background: rgba(255, 255, 255, 0.073);
         height: 100vh;
         top: 0;
         right: -200px;
@@ -90,7 +94,14 @@ img.logo {
     }
     nav .fas {
         display: block;
-        color: #fff;
+        color: #000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav .fa-solid {
+        display: block;
+        color: #000;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
