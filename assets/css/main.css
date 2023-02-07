@@ -34,6 +34,23 @@ ol {
   height: 65px;
 }
 
+.text-box {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 700px) {
   .logo {
     width: 50px;
@@ -47,6 +64,23 @@ ol {
     height: 100vh;
     width: 100%;
     position: relative;
+  }
+  .text-box {
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+  }
+  .text-box h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
 }
 @font-face {
