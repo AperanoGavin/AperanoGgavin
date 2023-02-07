@@ -35,7 +35,10 @@
                     </li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            <div class="nav-link" id="navUser">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <i class="fa-solid fa-bars" id="humberger" onclick="showMenu()"></i>
         </nav>
 
 
@@ -97,16 +100,20 @@
 
     <script>
         var navLink = document.getElementById("navLink");
+        var menu = document.getElementById("humberger");
 
         function showMenu() {
             navLink.style.right = "0";
+            //rendre le humburger menu invisible
+            menu.style.display = "none";
         }
 
         function hideMenu() {
             navLink.style.right = "-200px";
+            //rendre le humburger menu visible
+            menu.style.display = "block";
         }
     </script>
-    <!--<script type="text/javascript" src="./assets/scripts/menu.js"></script>-->
 
 </body>
 
