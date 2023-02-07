@@ -8,9 +8,9 @@ html {
 
 .header {
   background-image: url(../../assets/images/background_nba.png);
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -38,6 +38,15 @@ ol {
   .logo {
     width: 50px;
     height: 50px;
+  }
+  .header {
+    background-image: url(../../assets/images/background_nba.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
   }
 }
 @font-face {
