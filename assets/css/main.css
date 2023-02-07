@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 ul,
@@ -194,11 +195,6 @@ nav {
   font-size: 13px;
 }
 
-img.logo {
-  width: 100px;
-  height: 100px;
-}
-
 .nav-link {
   flex: 1;
   text-align: right;
@@ -240,7 +236,7 @@ img.logo {
   }
   .nav-link {
     position: absolute;
-    background: #f4367f;
+    background: rgba(255, 255, 255, 0.073);
     height: 100vh;
     top: 0;
     right: -200px;
@@ -250,7 +246,7 @@ img.logo {
   }
   nav .fas {
     display: block;
-    color: #fff;
+    color: #000;
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
