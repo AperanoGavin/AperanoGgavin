@@ -25,7 +25,7 @@
                         <a href="./index.html"> Nous restaurants</a>
                     </li>
                     <li>
-                        <a href="./index.html"> Nous contacter </a>
+                        <a href="./index.html"> Nos produits </a>
                     </li>
                     <li>
                         <a href="#cta"> Blog</a>
@@ -33,10 +33,28 @@
                     <li>
                         <a href="#cta"> Contact</a>
                     </li>
+                    <li>
+                        <a href="#cta"> |</a>
+                    </li>
+                    <li>
+                        <a href="#cta">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    <button class="button-warning">Se connecter</button>
+                    <button class="button-success">Commander</button>
                 </ul>
             </div>
-            <div class="nav-link" id="navUser">
-                <i class="fa-solid fa-user"></i>
+            <div class="nav-user" id="navUser">
+                <i class="fa-solid fa-user" onclick="ShowCon()"></i>
+                <ul>
+                    <li>
+                        <a href="./index.html"> Se connecter</a>
+                    </li>
+                    <li>
+                        <a href="./index.html"> S'inscrire</a>
+                    </li>
+                </ul>
             </div>
             <i class="fa-solid fa-bars" id="humberger" onclick="showMenu()"></i>
         </nav>
@@ -60,8 +78,8 @@
                     <button class="button.secondary ">
                 Subscribe
                 </button>
-                    <a class="link " href="https://www.youtube.com/channel/UCcBaoqamP8pn9_sJIyL8ULQ "> Test</a>
-                    <p class="p-italic"> lorem ipsum</p>
+                        <a class="link " href="https://www.youtube.com/channel/UCcBaoqamP8pn9_sJIyL8ULQ "> Test</a>
+                        <p class="p-italic"> lorem ipsum</p>
             </div>
             <div class="col-2">
                 <button class="button.secondary ">
@@ -101,6 +119,7 @@
     <script>
         var navLink = document.getElementById("navLink");
         var menu = document.getElementById("humberger");
+        var navUser = document.getElementById("navUser");
 
         function showMenu() {
             navLink.style.right = "0";
@@ -113,7 +132,13 @@
             //rendre le humburger menu visible
             menu.style.display = "block";
         }
+
+        function ShowCon() {
+
+
+        }
     </script>
+
 
 </body>
 
