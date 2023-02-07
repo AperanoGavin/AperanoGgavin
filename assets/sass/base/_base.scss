@@ -57,6 +57,8 @@
                                 margin-bottom: 20px;
                                 display: flex;
                                 justify-content: center;
+                                opacity: 0;
+                                animation: reveal2 1s forwards 0.5s;
                             }
                             
                             .text-box span {
@@ -67,6 +69,16 @@
                             }
                             
                             @keyframes reveal {
+                                from {
+                                    translate: 0 100%;
+                                }
+                                to {
+                                    translate: none;
+                                    opacity: 1;
+                                }
+                            }
+                            
+                            @keyframes reveal2 {
                                 from {
                                     translate: 0 100%;
                                 }
