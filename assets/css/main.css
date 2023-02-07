@@ -227,6 +227,14 @@ nav {
   font-size: 13px;
 }
 
+.nav-link ul li button {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
 .nav-link ul li::after {
   content: "";
   width: 0%;
@@ -318,16 +326,16 @@ nav .fas {
     }
 } */
 button {
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
   display: inline-block;
-  font-size: 16px;
-  padding: 12px 24px;
-  text-align: center;
   text-decoration: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
 }
 button:hover {
   background-color: #0062cc;
@@ -336,43 +344,43 @@ button:active {
   background-color: #3395ff;
 }
 
-button.secondary {
+.button-secondary {
   background-color: #6c757d;
 }
-button.secondary:hover {
+.button-secondary:hover {
   background-color: #545b62;
 }
-button.secondary:active {
+.button-secondary:active {
   background-color: #868e96;
 }
 
-button.warning {
+.button-warning {
   background-color: #ffc107;
 }
-button.warning:hover {
+.button-warning:hover {
   background-color: #d39e00;
 }
-button.warning:active {
+.button-warning:active {
   background-color: #ffce3a;
 }
 
-button.info {
+.button-info {
   background-color: #17a2b8;
 }
-button.info:hover {
+.button-info:hover {
   background-color: #117a8b;
 }
-button.info:active {
+.button-info:active {
   background-color: #1fc8e3;
 }
 
-button.success {
+.button-success {
   background-color: #28a745;
 }
-button.success:hover {
+.button-success:hover {
   background-color: #1e7e34;
 }
-button.success:active {
+.button-success:active {
   background-color: #34ce57;
 }
 
