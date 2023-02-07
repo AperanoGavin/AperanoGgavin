@@ -365,6 +365,24 @@ nav .fas {
     overflow: hidden;
     margin: 10px auto;
   }
+  .slides {
+    animation: glisse 5s infinite;
+  }
+  .slides img {
+    width: 300px;
+    height: 300px;
+  }
+  @keyframes glisse {
+    0% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-300px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 }
 button {
   display: inline-block;
