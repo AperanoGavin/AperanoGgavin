@@ -35,8 +35,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="nav-link" id="navUser">
-                <i class="fa-solid fa-user"></i>
+            <div class="nav-user" id="navUser">
+                <i class="fa-solid fa-user" onclick="ShowCon()"></i>
+                <ul>
+                    <li>
+                        <a href="./index.html"> Se connecter</a>
+                    </li>
+                    <li>
+                        <a href="./index.html"> S'inscrire</a>
+                    </li>
+                </ul>
             </div>
             <i class="fa-solid fa-bars" id="humberger" onclick="showMenu()"></i>
         </nav>
@@ -101,6 +109,7 @@
     <script>
         var navLink = document.getElementById("navLink");
         var menu = document.getElementById("humberger");
+        var navUser = document.getElementById("navUser");
 
         function showMenu() {
             navLink.style.right = "0";
@@ -113,7 +122,13 @@
             //rendre le humburger menu visible
             menu.style.display = "block";
         }
+
+        function ShowCon() {
+
+
+        }
     </script>
+
 
 </body>
 

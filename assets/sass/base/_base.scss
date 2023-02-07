@@ -20,10 +20,16 @@
         margin-left: auto;
     }
     
-    img.logo {
+    .logo {
+        //diminuer la taille de l'image
+        width: 65px;
+        height: 65px;
+    }
+    /* img.logo {
         width: 100px;
         height: 100px;
-    }
+        //diminuer la taille de l'image
+    } */
     
     @media(max-width: 700px) {
         img.logo {
