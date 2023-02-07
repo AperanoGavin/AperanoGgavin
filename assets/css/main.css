@@ -6,6 +6,16 @@ html {
   overflow-x: hidden;
 }
 
+.header {
+  background-image: url(../../assets/images/background_image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
 ul,
 ol {
   margin-bottom: 20px;
@@ -24,25 +34,12 @@ ol {
   height: 65px;
 }
 
-/* img.logo {
-    width: 100px;
-    height: 100px;
-    //diminuer la taille de l'image
-} */
 @media (max-width: 700px) {
-  img.logo {
+  .logo {
     width: 50px;
     height: 50px;
   }
 }
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
 @font-face {
   font-family: "Arial Bold Italic";
   src: url("fonts/ARIALBI.TTF") format("truetype");
@@ -175,7 +172,7 @@ nav {
   padding: 0% 10%;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(225, 218, 218, 0.775);
+  border-bottom: 1px solid rgba(118, 110, 110, 0.775);
 }
 
 .navv {
@@ -314,7 +311,7 @@ nav .fas {
     position: absolute;
     top: -200%;
     right: 0;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.073);
     width: 200px;
     text-align: left;
     padding: 10px 0;
@@ -334,6 +331,32 @@ nav .fas {
   }
   .fa-user {
     display: none;
+  }
+}
+.slider {
+  width: 600px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.slides {
+  width: 1500px;
+  animation: glisse 10s infinite;
+}
+
+.slide {
+  float: left;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 button {
