@@ -4,7 +4,7 @@
             justify-content: space-between;
             align-items: center;
             //raputer une bordure en bas en gris
-            border-bottom: 1px solid rgba(225, 218, 218, 0.775);
+            border-bottom: 1px solid rgba(118, 110, 110, 0.775);
         }
         
         .navv {
@@ -147,7 +147,7 @@
                 position: absolute;
                 top: -200%;
                 right: 0;
-                background: #fff;
+                background: rgba(255, 255, 255, 0.073);
                 width: 200px;
                 text-align: left;
                 padding: 10px 0;
