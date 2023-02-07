@@ -1,27 +1,34 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    position: relative;
-    min-height: 100vh;
-}
-
-ul,
-ol {
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
-
-//pour bien use nos col 
-.row {
-    clear: both;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    ul,
+    ol {
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+    
+    //pour bien use nos col 
+    .row {
+        clear: both;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    img.logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .header {
+        min-height: 100vh;
+        width: 100%;
+        //background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../../images/background_image.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
