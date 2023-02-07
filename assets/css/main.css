@@ -25,6 +25,12 @@ img.logo {
   height: 100px;
 }
 
+@media (max-width: 700px) {
+  img.logo {
+    width: 50px;
+    height: 50px;
+  }
+}
 .header {
   min-height: 100vh;
   width: 100%;
@@ -163,7 +169,7 @@ a {
 nav {
   display: flex;
   padding: 2% 6%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 0 0 0 0;
   background-color: #fff;
@@ -227,6 +233,14 @@ nav {
   width: 100%;
 }
 
+nav .fas {
+  display: none;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .text-box h1 {
     font-size: 20px;
@@ -245,6 +259,13 @@ nav {
     transition: 1s;
   }
   nav .fas {
+    display: block;
+    color: #000;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav .fa-solid {
     display: block;
     color: #000;
     margin: 10px;
