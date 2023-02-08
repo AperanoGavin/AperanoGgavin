@@ -246,6 +246,10 @@ nav .fas {
   }
   .nav-link ul li {
     display: block;
+    color: #fff;
+  }
+  .nav-link ul li a {
+    color: #fff;
   }
   .nav-link {
     position: absolute;
@@ -259,14 +263,14 @@ nav .fas {
   }
   nav .fas {
     display: block;
-    color: #000;
+    color: #fff;
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
   }
   .fa-bars {
     display: block;
-    color: #000;
+    color: #fff;
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
@@ -282,6 +286,7 @@ nav .fas {
     position: absolute;
     left: 50%;
     cursor: pointer;
+    color: #fff;
   }
   .nav-user ul li {
     display: block;
@@ -305,7 +310,7 @@ nav .fas {
   .nav-user ul li a {
     display: block;
     padding: 10px 20px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -600,6 +605,10 @@ h3 {
 @media (max-width: 700px) {
   .row {
     flex-direction: column;
+    margin-top: 0;
+  }
+  .section1-col {
+    margin-bottom: 26%;
   }
 }
 

@@ -63,5 +63,9 @@ h3 {
 @media(max-width:700px) {
     .row {
         flex-direction: column;
+        margin-top: 0;
+    }
+    .section1-col {
+        margin-bottom: 26%;
     }
 }
