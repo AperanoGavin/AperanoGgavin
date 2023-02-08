@@ -83,4 +83,17 @@
         .section1-col {
             margin-bottom: 26%;
         }
+
+    .section1 img {
+        width: 50%;
+        object-fit: cover;
+        //décaler l'image à gauche
+        margin-left: -115px;
+        margin-top: -50px;
     }
+    .section1 h3 {
+        //décaler le titre en haut
+        margin-top: -30px;
+        margin-left: 50px;
+    }
+}

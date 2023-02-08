@@ -621,6 +621,16 @@ h3 {
   .section1-col {
     margin-bottom: 26%;
   }
+  .section1 img {
+    width: 50%;
+    object-fit: cover;
+    margin-left: -115px;
+    margin-top: -50px;
+  }
+  .section1 h3 {
+    margin-top: -30px;
+    margin-left: 50px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
