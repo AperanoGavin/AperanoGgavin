@@ -12,8 +12,11 @@
 @import './utilities/mixins';
 @import './utilities/functions';
 //components
+@import'./components/slider';
 @import './components/buttons';
 @import './components/forms';
 @import './components/tables';
 @import './components/links';
 @import './components/menu';
+@import './components/text_box';
+@import './components/_section1';
