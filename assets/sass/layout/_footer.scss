@@ -1,5 +1,5 @@
 .footer {
-    position: absolute;
+    position: sticky;
     z-index: 0;
     bottom: 0;
     width: 100%;
@@ -10,7 +10,7 @@
     padding-right: 145px;
     padding-top: 71px;
     box-sizing: border-box;
-    overflow: hidden;
+    
 
 }
 
@@ -88,23 +88,20 @@
     font-size: 14px;
 }
 
-.footer-section{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    z-index: 1;
-    margin-top: 350px;
-    
+
+.app-button{
+  padding-left: 133px;
+
+
 }
 
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .footer-contact {
       flex-direction: column;
       align-items: center;
       text-align: center;
       padding-right: 15px;
-      padding-top: 25px;
+      padding-top: 5px;
     }
     
     .footer-app {
@@ -130,7 +127,7 @@
     }
 
     .footer-text span {
-        font-size: 18px;
+        font-size: 12px;
       }
 
     .footer-text {
@@ -142,12 +139,21 @@
     
     }
 
+    .app-button{
+        //center the buttons
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        margin-top: 10px;
+
+    }
+
 
       //reduce padding on footer
         .footer {
             padding-left: 25px;
             padding-right: 25px;
-            padding-top: 20px;
+            padding-top: 0px;
         }
   }
   
@@ -155,11 +161,104 @@
   @media only screen and (max-width: 900px) {
     //reduce all text in footer 
     .footer-text span {
-      font-size: 18px;
+      font-size: 15px;
+    }
+
+    .footer{
+        padding-top: 0px !important;
     }
 
 
 
   }
 
+
+  @media only screen and (max-width: 1331px) {
+    .footer{
+        padding-top: 30px;
+    }
+
+    .footer-text{
+        font-size: 18px;
+    }
+
+    .app-button{
+        //translate y -15px
+        transform: matrix(1, 0, 0, 1, 0, -15);
+    }
+  }
+
+
+
+  @media only screen and (max-width: 585px) {
+    .footer-contact {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-right: 15px;
+      padding-top: 0px;
+    }
+    
+    .footer-app {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+      padding-right: 20px;
+    }
+
+    #footer-logo{
+        //translate y -15px 
+        transform: matrix(1, 0, 0, 1, 0, -15);
+    }
+
+    .black-line{
+        //translate y -15px 
+        transform: matrix(1, 0, 0, -1, 0, -15);
+    }
+    .contact-buttons{
+        gap: 5px;
+        transform: matrix(1, 0, 0, 1, 0, -15);
+    }
+
+    .footer-text span {
+        font-size: 12px;
+      }
+
+    #subText {
+        font-size: 9px;
+    }
+
+    .footer-text {
+        padding-left: 0;
+        padding-top: 0px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .app-button{
+        //center the buttons
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        margin-top: 10px;
+        //change the sizes of the images 
+        img{
+            width: 70px;
+            height: 25px;
+        }
+
+    }
+
+
+
+      //reduce padding on footer
+        .footer {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 0px;
+        }
+  }
   
