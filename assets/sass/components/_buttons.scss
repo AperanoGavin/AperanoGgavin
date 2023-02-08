@@ -58,3 +58,13 @@ button {
         background-color: lighten($success-color, 10%);
     }
 }
+
+.button-extra1 {
+    background-color: $extra1-color;
+    &:hover {
+        background-color: darken($extra1-color, 10%);
+    }
+    &:active {
+        background-color: lighten($extra1-color, 10%);
+    }
+}

@@ -427,6 +427,16 @@ button:active {
   background-color: #34ce57;
 }
 
+.button-extra1 {
+  background-color: rgb(99, 99, 194);
+}
+.button-extra1:hover {
+  background-color: #4444ae;
+}
+.button-extra1:active {
+  background-color: #8888d0;
+}
+
 a {
   color: #fff;
   text-decoration: none;
