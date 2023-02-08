@@ -619,7 +619,9 @@ h3 {
     margin-top: 0;
   }
   .section1-col {
-    margin-bottom: 26%;
+    margin-bottom: 50%;
+    flex-basis: 40%;
+    width: unset;
   }
   .section1 img {
     width: 50%;
