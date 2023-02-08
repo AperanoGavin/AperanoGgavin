@@ -816,10 +816,14 @@ h3 {
 }
 /* section2 */
 .section2 {
-  width: 80%;
+  width: 70%;
   margin: auto;
   text-align: center;
   padding-top: 50px;
+}
+
+.section2 p {
+  font-size: 15px;
 }
 
 .section2-col {
@@ -832,7 +836,7 @@ h3 {
 
 img.img-section2 {
   width: 100%;
-  height: 600px;
+  height: 100%;
   display: block;
 }
 
