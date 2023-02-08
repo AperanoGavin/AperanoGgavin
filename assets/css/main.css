@@ -545,10 +545,10 @@ a {
 }
 /* for section1 */
 .section1 {
-  width: 80%;
+  width: 75%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 h1 {
@@ -574,10 +574,12 @@ p {
   flex-basis: 40%;
   background: #fff3f3;
   border-radius: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
+  width: 50%;
+  height: 50%;
 }
 
 h3 {
@@ -593,13 +595,22 @@ h3 {
 .section1 img {
   width: 50%;
   object-fit: cover;
-  margin-left: -230px;
+  margin-left: -350px;
   margin-top: -100px;
 }
 
 .section1 h3 {
   margin-top: -60px;
   margin-left: 100px;
+}
+
+#first-section {
+  background: #fff3f3;
+  padding: 50px 0;
+}
+
+#second-section-img img {
+  margin-top: -150px;
 }
 
 @media (max-width: 700px) {
