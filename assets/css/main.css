@@ -7,7 +7,7 @@ html {
 }
 
 .header {
-  background-image: url(../../assets/images/background_nba.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(30, 4, 4, 0.7)), url(../../assets/images/background_nba.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -202,7 +202,7 @@ nav {
 
 .nav-link ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 13px;
 }
 
@@ -218,7 +218,7 @@ nav {
   content: "";
   width: 0%;
   height: 2px;
-  background: #000;
+  background: #fff;
   display: block;
   margin: auto;
   transition: 0.5s;
