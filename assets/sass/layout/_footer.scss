@@ -1,5 +1,6 @@
 .footer {
     position: absolute;
+    z-index: 0;
     bottom: 0;
     width: 100%;
     height: 350px;
@@ -9,6 +10,7 @@
     padding-right: 145px;
     padding-top: 71px;
     box-sizing: border-box;
+    overflow: hidden;
 
 }
 
@@ -74,18 +76,90 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    vertical-align: text-top;
+    text-align: center;
     padding-left: 35px;
+    font-size: 24px;
+    transform: matrix(1, 0, 0, 1, 0, -10);
 
 
+}
+
+#subText {
+    font-size: 14px;
 }
 
 .footer-section{
-    //stick the footer to the bottom of the page
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
-    
-    
+    z-index: 1;
+    margin-top: 350px;
     
 }
+
+
+@media only screen and (max-width: 800px) {
+    .footer-contact {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-right: 15px;
+      padding-top: 25px;
+    }
+    
+    .footer-app {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+      padding-right: 20px;
+    }
+
+    #footer-logo{
+        //translate y -15px 
+        transform: matrix(1, 0, 0, 1, 0, -15);
+    }
+
+    .black-line{
+        //translate y -15px 
+        transform: matrix(1, 0, 0, -1, 0, -15);
+    }
+    .contact-buttons{
+        gap: 5px;
+        transform: matrix(1, 0, 0, 1, 0, -15);
+    }
+
+    .footer-text span {
+        font-size: 18px;
+      }
+
+    .footer-text {
+        padding-left: 0;
+        padding-top: 0px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+
+      //reduce padding on footer
+        .footer {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 20px;
+        }
+  }
+  
+
+  @media only screen and (max-width: 900px) {
+    //reduce all text in footer 
+    .footer-text span {
+      font-size: 18px;
+    }
+
+
+
+  }
+
+  
