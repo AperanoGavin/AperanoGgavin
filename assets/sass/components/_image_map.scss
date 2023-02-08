@@ -32,7 +32,7 @@
         font-weight: 600;
     }
     
-    @media (max-width:700px) {
+    @media(max-width:700px) {
         .image_map {
             background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(30, 4, 4, 0.7)), url(../../assets/images/background.jpeg);
             //remplie toute la section
@@ -44,7 +44,8 @@
         }
         .map_call {
             //le mettre au dessus de l'image
-            position: absolute;
+            display: none;
+            /* position: absolute;
             margin-top: -380px;
             // margin-bottom: 100px; //width: 50%;
             //décale à droite 
@@ -55,11 +56,15 @@
             background: rgba(255, 255, 255, 0.999);
             padding: 10px 10px;
             //faire descendre la classe
-            margin-top: 0px;
+            margin-top: 0px; */
         }
         .map_call h1 {
             font-size: 15px;
             font-weight: 600;
+        }
+        .map_call iframe {
+            width: 300;
+            height: 300;
         }
     }
     

@@ -57,3 +57,10 @@ img.img-section2 {
     bottom: 50%;
     opacity: 1;
 }
+
+@media (max-width: 700px) {
+    .section2 {
+        //faire descendre le texte
+        padding-top: 300px;
+    }
+}
