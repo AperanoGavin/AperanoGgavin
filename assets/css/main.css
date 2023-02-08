@@ -814,5 +814,57 @@ h3 {
     margin-left: 50px;
   }
 }
+.image_map {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.image_map img {
+  width: 100%;
+  object-fit: cover;
+  margin-top: -80px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.map_call {
+  position: absolute;
+  margin-top: -380px;
+  margin-left: 2%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.999);
+  padding: 10px 10px;
+}
+
+.map_call h1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .image_map {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(30, 4, 4, 0.7)), url(../../assets/images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+  }
+  .map_call {
+    position: absolute;
+    margin-top: -380px;
+    margin-left: 0%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.999);
+    padding: 10px 10px;
+    margin-top: 0px;
+  }
+  .map_call h1 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
