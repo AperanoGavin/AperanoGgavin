@@ -18,7 +18,7 @@
 <body>
     <section class="header">
         <nav class="navbar">
-            <a href="./index.html"> <img class="logo" src="./assets/images/logo_s1.png"></a>
+            <a href="./index.html"> <img class="logo" src="./assets/images/logo_s1.png" alt="logo"></a>
             <div class="nav-link" id="navLink">
                 <i class="fas fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -97,13 +97,15 @@
         <div class="row">
             <div class="section1-col">
                 <h3>Decouvrez nos inccontournables</h3>
-                <img src="./assets/images/slider1.png"> <button class="button-success"></button>
+                <img src="./assets/images/slider1.png" alt="slider1"> <button class="button-success"></button>
 
             </div>
             <div class="section1-col">
                 <h3>McDonald's Recrute</h3>
                 <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolorLorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet sit amet</p>
                 <button class="button-extra1"></button>
+                <img src="./assets/images/slider2.png" alt="slider2"> <button class=" button-success "></button>
+
 
             </div>
 
@@ -156,26 +158,26 @@
 
 
     <script>
-        var navLink = document.getElementById("navLink");
-        var menu = document.getElementById("humberger");
-        var navUser = document.getElementById("navUser");
-        var user = document.getElementById("user");
+        var navLink = document.getElementById("navLink ");
+        var menu = document.getElementById("humberger ");
+        var navUser = document.getElementById("navUser ");
+        var user = document.getElementById("user ");
 
         function showMenu() {
-            navLink.style.right = "0";
+            navLink.style.right = "0 ";
             //rendre le humburger menu invisible
-            menu.style.display = "none";
+            menu.style.display = "none ";
         }
 
         function hideMenu() {
-            navLink.style.right = "-200px";
+            navLink.style.right = "-200px ";
             //rendre le humburger menu visible
             menu.style.display = "block ";
             location.reload();
         }
 
         function ShowCon() {
-            navUser.style.top = "0";
+            navUser.style.top = "0 ";
             //rendre le user menu invisible
             user.style.display = "none ";
 
