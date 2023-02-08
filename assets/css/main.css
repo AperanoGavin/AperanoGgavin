@@ -425,6 +425,10 @@ nav .fas {
   }
   .nav-link ul li {
     display: block;
+    color: #fff;
+  }
+  .nav-link ul li a {
+    color: #fff;
   }
   .nav-link {
     position: absolute;
@@ -438,14 +442,14 @@ nav .fas {
   }
   nav .fas {
     display: block;
-    color: #000;
+    color: #fff;
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
   }
   .fa-bars {
     display: block;
-    color: #000;
+    color: #fff;
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
@@ -461,6 +465,7 @@ nav .fas {
     position: absolute;
     left: 50%;
     cursor: pointer;
+    color: #fff;
   }
   .nav-user ul li {
     display: block;
@@ -484,7 +489,7 @@ nav .fas {
   .nav-user ul li a {
     display: block;
     padding: 10px 20px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -606,6 +611,16 @@ button:active {
   background-color: #34ce57;
 }
 
+.button-extra1 {
+  background-color: rgb(99, 99, 194);
+}
+.button-extra1:hover {
+  background-color: #4444ae;
+}
+.button-extra1:active {
+  background-color: #8888d0;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -709,10 +724,10 @@ a {
 }
 /* for section1 */
 .section1 {
-  width: 80%;
+  width: 75%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 h1 {
@@ -735,13 +750,15 @@ p {
 }
 
 .section1-col {
-  flex-basis: 31%;
+  flex-basis: 40%;
   background: #fff3f3;
   border-radius: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
+  width: 50%;
+  height: 50%;
 }
 
 h3 {
@@ -754,9 +771,44 @@ h3 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
+.section1 img {
+  width: 50%;
+  object-fit: cover;
+  margin-left: -350px;
+  margin-top: -100px;
+}
+
+.section1 h3 {
+  margin-top: -60px;
+  margin-left: 100px;
+}
+
+#first-section {
+  background: #fff3f3;
+  padding: 50px 0;
+}
+
+#second-section-img img {
+  margin-top: -150px;
+}
+
 @media (max-width: 700px) {
   .row {
     flex-direction: column;
+    margin-top: 0;
+  }
+  .section1-col {
+    margin-bottom: 26%;
+  }
+  .section1 img {
+    width: 50%;
+    object-fit: cover;
+    margin-left: -115px;
+    margin-top: -50px;
+  }
+  .section1 h3 {
+    margin-top: -30px;
+    margin-left: 50px;
   }
 }
 

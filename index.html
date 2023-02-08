@@ -19,7 +19,7 @@
 <body>
     <section class="header">
         <nav class="navbar">
-            <a href="./index.html"> <img class="logo" src="./assets/images/logo_s1.png"></a>
+            <a href="./index.html"> <img class="logo" src="./assets/images/logo_s1.png" alt="logo"></a>
             <div class="nav-link" id="navLink">
                 <i class="fas fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -96,15 +96,15 @@
     <section id="section1" class="section1">
 
         <div class="row">
-            <div class="section1-col">
-                <h3>Intermediate</h3>
-                <p>Lorem ipsuLorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit ametm dolor sit
-                    amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+            <div class="section1-col" id="first-section">
+                <img src="./assets/images/slider1.png" alt="slider1">
+                <h3>Decouvrez nos inccontournables</h3>
+                <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolorLorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet sit amet</p>
             </div>
-            <div class="section1-col">
-                <h3>Degree</h3>
-                <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolorLorem ipsum dolor sit amet
-                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet sit amet</p>
+            <div class="section1-col" id="second-section-img">
+                <img src="./assets/images/slider2.png" alt="slider2">
+                <h3>McDonald's Recrute</h3>
+                <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolorLorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet sit amet</p>
             </div>
 
 
@@ -195,30 +195,30 @@
         function hideMenu() {
             navLink.style.right = "-200px";
             //rendre le humburger menu visible
-            menu.style.display = "block ";
+            menu.style.display = "block";
             location.reload();
         }
 
         function ShowCon() {
             navUser.style.top = "0";
             //rendre le user menu invisible
-            user.style.display = "none ";
+            user.style.display = "none";
 
 
         }
 
         function hideCon() {
-            navUser.style.top = "-300px ";
+            navUser.style.top = "-300px";
             //rendre le user menu visible
-            user.style.display = "block ";
+            user.style.display = "block";
             location.reload();
 
         }
+
+        //si les fonctions hideCon , ShowCon, hideMenu, showMenu ne fonctionnent pas envoyer un message d'erreur dans la console (les verifier l'espace dans les "")
     </script>
 
 
 </body>
-
-</html>
 
 </html>
