@@ -35,7 +35,6 @@
         padding: 20px 12px;
         box-sizing: border-box;
         transition: 0.5s;
-        //réduire la taille de la section1-col
         width: 50%;
         height: 50%;
     }
@@ -81,19 +80,23 @@
             margin-top: 0;
         }
         .section1-col {
-            margin-bottom: 26%;
+            margin-bottom: 50%;
+            flex-basis: 40%;
+            //étirer la section1-col vers la droite
+            // margin-left: 20%;
+            //retirer l'attribut width
+            width: unset;
         }
-
-    .section1 img {
-        width: 50%;
-        object-fit: cover;
-        //décaler l'image à gauche
-        margin-left: -115px;
-        margin-top: -50px;
+        .section1 img {
+            width: 50%;
+            object-fit: cover;
+            //décaler l'image à gauche
+            margin-left: -115px;
+            margin-top: -50px;
+        }
+        .section1 h3 {
+            //décaler le titre en haut
+            margin-top: -30px;
+            margin-left: 50px;
+        }
     }
-    .section1 h3 {
-        //décaler le titre en haut
-        margin-top: -30px;
-        margin-left: 50px;
-    }
-}
