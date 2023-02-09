@@ -44,7 +44,7 @@ ol {
     height: 50px;
   }
   .header {
-    background-image: url(../../assets/images/background_nba.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(30, 4, 4, 0.7)), url(../../assets/images/background_nba.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -412,18 +412,28 @@ nav {
   width: 100%;
 }
 
-nav .fas {
-  display: none;
+/*  nav .fas {
+    display: inline-block;
 }
 
 .fa-bars {
-  display: none;
+    display: inline-block;
 }
 
 .fa-user {
-  display: none;
+    display: inline-block;
+} */
+@media screen and (min-width: 700px) {
+  nav .fas {
+    display: none;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .fa-user {
+    display: none;
+  }
 }
-
 @media (max-width: 700px) {
   .text-box h1 {
     font-size: 20px;
@@ -498,22 +508,13 @@ nav .fas {
     text-decoration: none;
   }
 }
-@media (min-width: 700px) {
-  .fa-bars {
-    display: none;
-  }
-  .fa-user {
-    display: none;
-  }
-}
 .slider {
-  width: 600px;
   overflow: hidden;
   margin: 10px auto;
 }
 
 .slides {
-  width: 1500px;
+  width: 2700px;
   animation: glisse 10s infinite;
 }
 
@@ -534,7 +535,6 @@ nav .fas {
 }
 @media (max-width: 700px) {
   .slider {
-    width: 300px;
     overflow: hidden;
     margin: 10px auto;
   }
@@ -550,7 +550,7 @@ nav .fas {
       transform: translateX(0);
     }
     33% {
-      transform: translateX(-300px);
+      transform: translateX(-600px);
     }
     100% {
       transform: translateX(0);
@@ -818,6 +818,85 @@ h3 {
     margin-left: 50px;
   }
 }
+.section1 .row .section1-col {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+
+.section1.visible .row .section1-col:first-child {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.section1.visible .row .section1-col:last-child {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* section2 */
+.section2 {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.section2 p {
+  font-size: 15px;
+}
+
+.section2-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+img.img-section2 {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(244, 177, 54, 0.6117647059);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .section2 {
+    padding-top: 300px;
+  }
+}
 .image_map {
   width: 75%;
   margin: auto;
@@ -849,17 +928,19 @@ h3 {
 
 @media (max-width: 700px) {
   .image_map {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(30, 4, 4, 0.7)), url(../../assets/images/background.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     margin: auto;
   }
+  .image_map img {
+    border-radius: unset;
+  }
   .map_call {
     position: absolute;
     margin-top: -380px;
-    margin-left: 0%;
+    margin-left: 11%;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.999);
     padding: 10px 10px;
@@ -868,6 +949,10 @@ h3 {
   .map_call h1 {
     font-size: 15px;
     font-weight: 600;
+  }
+  iframe {
+    width: 280px;
+    height: 200px;
   }
 }
 .body-bg-products {
