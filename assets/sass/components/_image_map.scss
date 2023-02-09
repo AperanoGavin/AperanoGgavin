@@ -1,72 +1,71 @@
-    .image_map {
-        width: 75%;
-        margin: auto;
-        text-align: center;
-        padding-top: 90px;
-    }
-    
-    .image_map img {
-        width: 100%;
-        object-fit: cover;
-        margin-top: -80px;
-        border-radius: 10px;
-        box-sizing: border-box;
-    }
-    
-    .map_call {
-        //le mettre au dessus de l'image
-        position: absolute;
-        margin-top: -380px;
-        // margin-bottom: 100px; //width: 50%;
-        //décale à droite 
-        margin-left: 2%;
-        //height: 50%;
-        border-radius: 10px;
-        //rajoute un fond blanc avec un padding
-        background: rgba(255, 255, 255, 0.999);
-        padding: 10px 10px;
-    }
-    
-    .map_call h1 {
-        font-size: 15px;
-        font-weight: 600;
-    }
-    
-    @media(max-width:700px) {
         .image_map {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(30, 4, 4, 0.7)), url(../../assets/images/background.jpeg);
-            //remplie toute la section
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 100%;
+            width: 75%;
             margin: auto;
+            text-align: center;
+            padding-top: 90px;
         }
+        
+        .image_map img {
+            width: 100%;
+            object-fit: cover;
+            margin-top: -80px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        
         .map_call {
             //le mettre au dessus de l'image
-            //display: none;
             position: absolute;
             margin-top: -380px;
             // margin-bottom: 100px; //width: 50%;
             //décale à droite 
-            margin-left: 0%;
+            margin-left: 2%;
             //height: 50%;
             border-radius: 10px;
             //rajoute un fond blanc avec un padding
             background: rgba(255, 255, 255, 0.999);
             padding: 10px 10px;
-            //faire descendre la classe
-            margin-top: 0px;
         }
+        
         .map_call h1 {
             font-size: 15px;
             font-weight: 600;
         }
-        iframe {
-            width: 375px;
-            height: 200px;
+        
+        @media(max-width:700px) {
+            .image_map {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                margin: auto;
+            }
+            .image_map img {
+                border-radius: unset;
+            }
+            .map_call {
+                position: absolute;
+                margin-top: -380px;
+                // margin-bottom: 100px; //width: 50%;
+                //décale à droite 
+                margin-left: 11%;
+                //height: 50%;
+                border-radius: 10px;
+                //rajoute un fond blanc avec un padding
+                background: rgba(255, 255, 255, 0.999);
+                padding: 10px 10px;
+                //faire descendre la classe
+                margin-top: 0px;
+            }
+            .map_call h1 {
+                font-size: 15px;
+                font-weight: 600;
+            }
+            iframe {
+                width: 280px;
+                height: 200px;
+            }
         }
-    }
-    
-    //reduire la taille de la classe
-    //reduire la taille de la classe
+        
+        //reduire la taille de la classe
+        //reduire la taille de la classe

@@ -906,17 +906,19 @@ img.img-section2 {
 
 @media (max-width: 700px) {
   .image_map {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(30, 4, 4, 0.7)), url(../../assets/images/background.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     margin: auto;
   }
+  .image_map img {
+    border-radius: unset;
+  }
   .map_call {
     position: absolute;
     margin-top: -380px;
-    margin-left: 0%;
+    margin-left: 11%;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.999);
     padding: 10px 10px;
@@ -927,7 +929,7 @@ img.img-section2 {
     font-weight: 600;
   }
   iframe {
-    width: 375px;
+    width: 280px;
     height: 200px;
   }
 }
