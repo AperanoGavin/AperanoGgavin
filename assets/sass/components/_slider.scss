@@ -1,11 +1,11 @@
 .slider {
-    width: 600px;
+    //width: 600px;
     overflow: hidden;
     margin: 10px auto;
 }
 
 .slides {
-    width: calc(500px * 3);
+    width: calc(900px * 3);
     animation: glisse 10s infinite;
 }
 
