@@ -225,62 +225,14 @@
     </footer>
 
     <script>
-        var navLink = document.getElementById("navLink");
-        var menu = document.getElementById("humberger");
-        var navUser = document.getElementById("navUser");
-        var user = document.getElementById("user");
-
-        function showMenu() {
-            navLink.style.right = "0";
-            //rendre le humburger menu invisible
-            menu.style.display = "none";
-        }
-
-        function hideMenu() {
-            navLink.style.right = "-200px";
-            //rendre le humburger menu visible
-            menu.style.display = "block";
-            //location.reload();
-        }
-
-        function ShowCon() {
-            navUser.style.top = "0";
-            //rendre le user menu invisible
-            user.style.display = "none";
-
-
-        }
-
-        function hideCon() {
-            navUser.style.top = "-300px";
-            //rendre le user menu visible
-            user.style.display = "block";
-            //location.reload();
-
-        }
-
         //si les fonctions hideCon , ShowCon, hideMenu, showMenu ne fonctionnent pas envoyer un message d'erreur dans la console (les verifier l'espace dans les "")
 
         //pour la section1
-        let section = document.querySelector(".section1");
-
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                var section1 = $('#section1');
-                var section1Top = section1.offset().top;
-                var section1Height = section1.outerHeight();
-                var windowHeight = $(window).height();
-                var windowScroll = $(window).scrollTop();
-
-                if (windowScroll >= (section1Top - (windowHeight / 2))) {
-                    section1.addClass('visible');
-                } else {
-                    section1.removeClass('visible');
-                }
-            });
-        });
     </script>
 
+    <script src="./assets/scripts/animate_section1.js"></script>
+    <script src="./assets/scripts/menu.js"></script>
+    <script src="./assets/scripts/audio_section2.js"></script>
 
 </body>
 
