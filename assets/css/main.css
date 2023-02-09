@@ -951,5 +951,10 @@ img.img-section2 {
     height: 200px;
   }
 }
+.map {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */
