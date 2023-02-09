@@ -530,7 +530,6 @@ nav .fas {
 }
 @media (max-width: 700px) {
   .slider {
-    width: 300px;
     overflow: hidden;
     margin: 10px auto;
   }
@@ -546,7 +545,7 @@ nav .fas {
       transform: translateX(0);
     }
     33% {
-      transform: translateX(-300px);
+      transform: translateX(-600px);
     }
     100% {
       transform: translateX(0);
