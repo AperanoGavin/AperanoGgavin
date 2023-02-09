@@ -97,13 +97,22 @@ function initMap() {
         query: mapClass
     };
 
+    var Url = document.getElementById("map").getAttribute("data-url");
+
     var service = new google.maps.places.PlacesService(map);
     service.textSearch(request, function(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
                 var marker = new google.maps.Marker({
                     map: map,
-                    position: results[i].geometry.location
+                    position: results[i].geometry.location,
+                    icon: {
+                        url: Url,
+                        scaledSize: new google.maps.Size(20, 20)
+                    }
+
+                    /*  icon: url = "./assets/images/icon_m.png" */
+
                 });
             }
         }
