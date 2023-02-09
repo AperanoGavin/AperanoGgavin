@@ -89,10 +89,12 @@ function initMap() {
             }
         ]
     });
+    //récupère le nom de la classe de la div avec l'id map
+    var mapClass = document.getElementById("map").className;
     var request = {
         location: latlng,
         radius: '5000',
-        query: 'McDonalds'
+        query: mapClass
     };
 
     var service = new google.maps.places.PlacesService(map);
