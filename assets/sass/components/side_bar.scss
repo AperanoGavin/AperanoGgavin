@@ -1,0 +1,67 @@
+.sideBar-product{
+    background: url(../images/products/BigLogo.png) no-repeat;
+    background-color: #DB0007;
+    //translate the bg image y
+    background-position: 0px 206px;
+    width: 350px;
+    height: 724px;
+    z-index: -1;
+    margin-left: 48px;
+    margin-top: 102px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sideBar-product a{
+   // margin-bottom: 36px;
+    height: 68px;
+    width: 277.67px;
+    font-size: 22.67px;
+    //center vertically
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2px;
+
+}
+
+/*.sideBar-product a:hover{
+    //translate x 10px 
+    transform: translateX(10px);
+    transition: 0.5s;
+    //display image to the right of the text
+    background: url(../images/products/arrow.png) no-repeat;
+    background-position: 100% 40%;
+    background-size: 28.33px 28.33px;   
+    padding-right: 20px;
+    
+}*/
+
+/*#sideBar-logo{
+    position: absolute;
+    top: 39.889%;
+    bottom: 23.77%;
+    //translate x 48px
+    left: 48px;
+    z-index: 0;  
+}*/
+
+.buttons-aside{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+
+.bg-logo{
+ background: url(../../images/products/BigLogo.png) no-repeat center center fixed;
+    background-size: cover;
+    width: 350px;
+    height: 750px;
+}
+
