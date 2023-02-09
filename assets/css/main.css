@@ -40,7 +40,7 @@ ol {
     height: 50px;
   }
   .header {
-    background-image: url(../../assets/images/background_nba.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(30, 4, 4, 0.7)), url(../../assets/images/background_nba.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -408,18 +408,28 @@ nav {
   width: 100%;
 }
 
-nav .fas {
-  display: none;
+/*  nav .fas {
+    display: inline-block;
 }
 
 .fa-bars {
-  display: none;
+    display: inline-block;
 }
 
 .fa-user {
-  display: none;
+    display: inline-block;
+} */
+@media screen and (min-width: 700px) {
+  nav .fas {
+    display: none;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .fa-user {
+    display: none;
+  }
 }
-
 @media (max-width: 700px) {
   .text-box h1 {
     font-size: 20px;
@@ -492,14 +502,6 @@ nav .fas {
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
-  }
-}
-@media (min-width: 700px) {
-  .fa-bars {
-    display: none;
-  }
-  .fa-user {
-    display: none;
   }
 }
 .slider {

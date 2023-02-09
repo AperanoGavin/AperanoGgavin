@@ -50,17 +50,28 @@
         .nav-link ul li:hover::after {
             width: 100%;
         }
-        
-        nav .fas {
-            display: none;
+        /*  nav .fas {
+            display: inline-block;
         }
         
         .fa-bars {
-            display: none;
+            display: inline-block;
         }
         
         .fa-user {
-            display: none;
+            display: inline-block;
+        } */
+        
+        @media screen and (min-width: 700px) {
+            nav .fas {
+                display: none;
+            }
+            .fa-bars {
+                display: none;
+            }
+            .fa-user {
+                display: none;
+            }
         }
         
         @media(max-width:700px) {
@@ -144,11 +155,3 @@
         }
         
         //une fois depasser 700px on  recache fa-bar et fa-user
-        @media(min-width:700px) {
-            .fa-bars {
-                display: none;
-            }
-            .fa-user {
-                display: none;
-            }
-        }
