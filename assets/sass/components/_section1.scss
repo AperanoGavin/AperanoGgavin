@@ -100,3 +100,19 @@
             margin-left: 50px;
         }
     }
+    
+    .section1 .row .section1-col {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 1s ease-in-out;
+    }
+    
+    .section1.visible .row .section1-col:first-child {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .section1.visible .row .section1-col:last-child {
+        opacity: 1;
+        transform: translateX(0);
+    }
