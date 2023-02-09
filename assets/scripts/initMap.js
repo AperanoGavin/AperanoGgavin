@@ -17,7 +17,7 @@ function initMap() {
             {
                 "elementType": "labels.icon",
                 "stylers": [{
-                    "visibility": "on"
+                    "visibility": "off"
                 }]
             },
             {
@@ -88,6 +88,23 @@ function initMap() {
                 }]
             }
         ]
+    });
+    var request = {
+        location: latlng,
+        radius: '5000',
+        query: 'McDonalds'
+    };
+
+    var service = new google.maps.places.PlacesService(map);
+    service.textSearch(request, function(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: results[i].geometry.location
+                });
+            }
+        }
     });
 
 }
