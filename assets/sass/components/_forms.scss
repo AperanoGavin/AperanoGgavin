@@ -30,20 +30,21 @@
         }
         
         .form-connexion-body {
-            //espacement entre les inputs
             margin-bottom: 20px;
-            //centrer les inputs
             display: flex;
             flex-direction: column;
         }
         
         .form-connexion-input {
             width: 100%;
+            height: 50px;
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 10px;
             box-sizing: border-box;
             margin-bottom: 5px;
             text-align: center;
+            //agrandir la taille de l'input
+            font-size: 20px;
         }
         
         .form-connexion-input-submit {
