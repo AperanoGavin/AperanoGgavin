@@ -20,6 +20,9 @@ submit.addEventListener('click', function(e) {
             var $newDiv = $("<div></div>");
             $newDiv.addClass("errors");
             $(".form-connexion-body").append($newDiv);
+            //je veux que le message apparaisse au dessus du formulaire et qu'il soit rouge
+            $(".errors").css("color", "red");
+            $(".errors").css("margin-bottom", "200px");
         }
         $(".errors").empty();
         $(".errors").append("<i class='fa-regular fa-triangle-exclamation'></i>");
