@@ -623,8 +623,8 @@ button:active {
 }
 
 .form-connexion {
-  background-color: rgb(108, 33, 33);
-  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(41, 133, 138, 0.7) 0%, rgb(123, 93, 53) 35%, rgb(136, 59, 108) 100%);
+  border-radius: 30px;
   box-shadow: 0 0 10px rgba(156, 30, 30, 0.1);
   padding: 30px;
   width: 100%;
