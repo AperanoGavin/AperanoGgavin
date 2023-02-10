@@ -16,7 +16,6 @@
                 transition: all 1s ease-in-out;
             }
             
-            //rajoute trois transitions nth-child  avant le dernier enfant
             .form-connexion:nth-child(1) {
                 opacity: 1;
                 transform: translateX(0);
