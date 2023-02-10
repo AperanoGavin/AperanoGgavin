@@ -622,6 +622,34 @@ button:active {
   background-color: #8888d0;
 }
 
+.form-connexion {
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form-connexion-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-connexion-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-connexion-body {
+  margin-bottom: 20px;
+}
+
 a {
   color: #fff;
   text-decoration: none;

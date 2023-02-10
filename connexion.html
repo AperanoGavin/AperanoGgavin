@@ -44,7 +44,7 @@
                     </li>
 
                     <button onclick="location.href='./connexion.html'" class="button-warning" id="button-nav">Se connecter</button>
-                    <button class="button-success" id="button-nav">Commander</button>
+                    <button onclick="location.href='./commander.html'" class="button-success" id="button-nav">Commander</button>
 
                 </ul>
             </div>
@@ -66,14 +66,41 @@
 
 
         </nav>
-        <!-- changer le nom de la classe pour ce qui est rechercher-->
-        <div id="map" class="McDonalds" style="width: 100%; height: 100%;" data-url="./assets/images/icon_m.png"></div>
+        <!-- le form-->
+        <div class="form-connexion">
+            <div class="form-connexion-content">
+                <div class="form-connexion-logo">
+                    <img src="./assets/images/logo_s1.png" alt="logo">
+                </div>
+                <div class="form-connexion-header">
+                    <h1>Se connecter</h1>
+                </div>
+                <div class="form-connexion-body">
+                    <form action="#" method="POST">
+                        <div class="form-connexion-input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-connexion-input">
+                            <span class="error"></span>
+                            <label for="password">Mot de passe</label>
+                            <input type="password" name="password" id="password" placeholder="Mot de passe">
+                        </div>
+                        <div class="form-connexion-input">
+                            <input type="submit" value="Se connecter" class="button-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
 
 
 
     </section>
     <script>
     </script>
+    <script src="./assets/scripts/form.js"></script>
     <script src="./assets/scripts/initMap.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_IEjM6QGiiLnJfeQPRK7Pq6hHUBhrPDo&libraries=places&callback=initMap"></script>
     <script src="./assets/scripts/menu.js"></script>
