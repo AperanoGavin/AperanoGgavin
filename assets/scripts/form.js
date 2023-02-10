@@ -1,4 +1,4 @@
-//récuperer la class form-connexion-body et 
+//récuperer la class form-connexion-body 
 var form = document.querySelector('.form-connexion-body');
 var inputs = form.querySelectorAll('input');
 var submit = form.querySelector('input[type="submit"]');
@@ -20,7 +20,7 @@ submit.addEventListener('click', function(e) {
             var $newDiv = $("<div></div>");
             $newDiv.addClass("errors");
             $(".form-connexion-body").append($newDiv);
-            //je veux que le message apparaisse au dessus du formulaire et qu'il soit rouge
+            // le message apparaisse au dessus du formulaire et ent rouge
             $(".errors").css("color", "red");
             $(".errors").css("margin-bottom", "200px");
         }
