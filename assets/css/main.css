@@ -634,6 +634,22 @@ button:active {
   margin-bottom: 50px;
 }
 
+.form-connexion {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 1s ease-in-out;
+}
+
+.form-connexion.visible:first-child {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.form-connexion:last-child {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .form-connexion-logo {
   display: flex;
   justify-content: center;

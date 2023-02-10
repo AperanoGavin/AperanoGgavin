@@ -1,57 +1,73 @@
-        .form-connexion {
-            background: linear-gradient(90deg, rgba(41, 133, 138, 0.7) 0%, rgba(123, 93, 53, 1) 35%, rgb(136, 59, 108) 100%);
-            border-radius: 30px;
-            box-shadow: 0 0 10px rgba(156, 30, 30, 0.1);
-            padding: 30px;
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-        
-        //centrer form-connexion-logo
-        .form-connexion-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-        
-        .form-connexion-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .form-connexion-header h1 {
-            font-size: 30px;
-            margin-bottom: 10px;
-            color: white;
-        }
-        
-        .form-connexion-body {
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .form-connexion-input {
-            width: 100%;
-            height: 50px;
-            padding: 10px;
-            border-radius: 10px;
-            box-sizing: border-box;
-            margin-bottom: 5px;
-            text-align: center;
-            //agrandir la taille de l'input
-            font-size: 20px;
-        }
-        
-        .form-connexion-input-submit {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            box-sizing: border-box;
-            margin-bottom: 5px;
-            text-align: center;
-        }
+            .form-connexion {
+                background: linear-gradient(90deg, rgba(41, 133, 138, 0.7) 0%, rgba(123, 93, 53, 1) 35%, rgb(136, 59, 108) 100%);
+                border-radius: 30px;
+                box-shadow: 0 0 10px rgba(156, 30, 30, 0.1);
+                padding: 30px;
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            
+            .form-connexion {
+                opacity: 0;
+                transform: translateY(-100%);
+                transition: all 1s ease-in-out;
+            }
+            
+            .form-connexion.visible:first-child {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            
+            .form-connexion:last-child {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            
+            //centrer form-connexion-logo
+            .form-connexion-logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+            
+            .form-connexion-header {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .form-connexion-header h1 {
+                font-size: 30px;
+                margin-bottom: 10px;
+                color: white;
+            }
+            
+            .form-connexion-body {
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .form-connexion-input {
+                width: 100%;
+                height: 50px;
+                padding: 10px;
+                border-radius: 10px;
+                box-sizing: border-box;
+                margin-bottom: 5px;
+                text-align: center;
+                //agrandir la taille de l'input
+                font-size: 20px;
+            }
+            
+            .form-connexion-input-submit {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                box-sizing: border-box;
+                margin-bottom: 5px;
+                text-align: center;
+            }
