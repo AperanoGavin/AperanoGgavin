@@ -20,9 +20,7 @@ submit.addEventListener('click', function(e) {
             var $newDiv = $("<div></div>");
             $newDiv.addClass("errors");
             $(".form-connexion-body").append($newDiv);
-            // le message apparaisse au dessus du formulaire et ent rouge
             $(".errors").css("color", "red");
-            // $(".errors").css("margin-bottom", "20px");
         }
         $(".errors").empty();
         $(".errors").append("<i class='fa-regular fa-triangle-exclamation'></i>");
