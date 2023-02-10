@@ -16,10 +16,23 @@
                 transition: all 1s ease-in-out;
             }
             
-            .form-connexion.visible:first-child {
+            //rajoute trois transitions nth-child  avant le dernier enfant
+            .form-connexion:nth-child(1) {
                 opacity: 1;
                 transform: translateX(0);
+                //transition-delay: 0.2s;
             }
+            /* .form-connexion:nth-child(2) {
+                opacity: 1;
+                transform: translateX(500%);
+                //transition-delay: 0.4s;
+            }
+            
+            .form-connexion:nth-child(3) {
+                opacity: 1;
+                transform: translateX(200%);
+                //transition-delay: 0.6s;
+            } */
             
             .form-connexion:last-child {
                 opacity: 1;
