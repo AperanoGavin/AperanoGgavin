@@ -623,9 +623,9 @@ button:active {
 }
 
 .form-connexion {
-  background-color: transparent;
+  background-color: rgb(108, 33, 33);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(156, 30, 30, 0.1);
   padding: 30px;
   width: 100%;
   max-width: 400px;
@@ -646,8 +646,34 @@ button:active {
   margin-bottom: 30px;
 }
 
+.form-connexion-header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+}
+
 .form-connexion-body {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-connexion-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.form-connexion-input-submit {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 a {
