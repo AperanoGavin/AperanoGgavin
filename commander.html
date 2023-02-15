@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework css</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6721551398549890" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <a href="./index.html"> <img class="logo" src="./assets/images/logo_s1.png" alt="logo"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="./index.html"> Nous restaurants</a>
+                    </li>
+                    <li>
+                        <a href="./index.html"> Nos produits </a>
+                    </li>
+                    <li>
+                        <a href="#cta"> Blog</a>
+                    </li>
+                    <li>
+                        <a href="#cta"> Contact</a>
+                    </li>
+                    <li>
+                        <a href="#cta"> |</a>
+                    </li>
+                    <li>
+                        <a href="#cta">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+
+                    <button onclick="location.href='./connexion.html'" class="button-warning" id="button-nav">Se connecter</button>
+                    <button class="button-success" id="button-nav">Commander</button>
+
+                </ul>
+            </div>
+            <div class="nav-user" id="navUser">
+                <i class="fas fa-times" onclick="hideCon()"></i>
+                <ul>
+                    <li>
+                        <a href="./index.html"> Connexion</a>
+                    </li>
+                    <li>
+                        <a href="./index.html"> Inscription</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-user" id="user" onclick="ShowCon()"></i>
+            <i class="fa-solid fa-bars" id="humberger" onclick="showMenu()"></i>
+
+
+        </nav>
+        <!-- changer le nom de la classe pour ce qui est rechercher-->
+        <div id="map" class="McDonalds" style="width: 100%; height: 100%;" data-url="./assets/images/icon_m.png"></div>
+
+
+
+    </section>
+    <script>
+    </script>
+    <script src="./assets/scripts/initMap.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_IEjM6QGiiLnJfeQPRK7Pq6hHUBhrPDo&libraries=places&callback=initMap"></script>
+    <script src="./assets/scripts/menu.js"></script>
+
+
+</body>
+
+</html>

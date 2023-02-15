@@ -1,2 +1,10 @@
-rajouter sur le groupe pourque les autres membres du groupe rejoignent le discord  avec la config pré faite
-https://discord.gg/KeQPj6my
+28/ Merci de preciser la formule du position sizing avec E=Entree, C=Capital et qty=quantite ?
+*
+qty = Capital x 2% / (E - SL)
+qty = Capital x 2% / abs(E - SL)
+qty = Capital x 2% / (SL -E)
+qty =  (E - SL) / (Capital x 2%)
+29/  Merci de rediger les etapes de la recette de cuisine de la stratégie de Break Out avec Entrée, SL, BE, calcul de qty.
+*
+//réponse
+
