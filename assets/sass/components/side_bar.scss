@@ -1,10 +1,10 @@
-.sideBar-product{
-    background: url(../images/products/BigLogo.png) no-repeat;
+.sideBar-product {
+    background: url(../images/products/BigLogo.png) no-repeat bottom;
     background-color: #DB0007;
     //translate the bg image y
-    background-position: 0px 206px;
+    // background-position: 0px 206px;
     width: 350px;
-    height: 724px;
+    height: 879px;
     z-index: -1;
     margin-left: 48px;
     margin-top: 102px;
@@ -15,8 +15,8 @@
     text-align: center;
 }
 
-.sideBar-product a{
-   // margin-bottom: 36px;
+.sideBar-product a {
+    // margin-bottom: 36px;
     height: 68px;
     width: 277.67px;
     font-size: 22.67px;
@@ -50,7 +50,7 @@
     z-index: 0;  
 }*/
 
-.buttons-aside{
+.buttons-aside {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -58,10 +58,10 @@
 }
 
 
-.bg-logo{
- background: url(../../images/products/BigLogo.png) no-repeat center center fixed;
-    background-size: cover;
-    width: 350px;
-    height: 750px;
+.bg-logo {
+    // background: url(../../images/products/BigLogo.png) no-repeat center center fixed;
+    //  background-color: #DB0007;
+    //  background-size: cover;
+    //   width: 350px;
+    //  height: 750px;
 }
-
