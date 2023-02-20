@@ -21,9 +21,10 @@ submit.addEventListener('click', function(e) {
             $newDiv.addClass("errors");
             $(".form-connexion-body").append($newDiv);
             $(".errors").css("color", "red");
+            $(".errors").css("text-align", "center");
         }
         $(".errors").empty();
-        $(".errors").append("<i class='fa-regular fa-triangle-exclamation'></i>");
+        $(".errors").append("<i class='fa fa-exclamation-triangle'></i>");
         $(".errors").append("<span class='error-text'>Veuillez remplir tous les champs</span>");
     } else {
         //suprimer $newDiv
