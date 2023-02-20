@@ -704,7 +704,6 @@ input {
 }
 
 .form-connexion-input {
-  width: 100%;
   padding: 20px;
   border-radius: 5px;
   box-sizing: border-box;
@@ -713,7 +712,6 @@ input {
 }
 
 .form-connexion-input-submit {
-  width: 100%;
   padding: 10px;
   border-radius: 5px;
   box-sizing: border-box;
@@ -722,15 +720,13 @@ input {
 }
 
 .form-connexion-input input {
-  width: 100%;
   padding: 20px;
-  border-radius: 15px;
-  box-sizing: border-box;
   margin-bottom: -50px;
   text-align: center;
 }
 
 .form-connexion-input-submit input {
+  width: 90%;
   padding: 20px;
   border-radius: 15px;
   box-sizing: border-box;
