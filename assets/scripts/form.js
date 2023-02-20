@@ -22,6 +22,14 @@ submit.addEventListener('click', function(e) {
             $(".form-connexion-body").append($newDiv);
             $(".errors").css("color", "red");
             $(".errors").css("text-align", "center");
+
+            //diminuer la taille de la div si on est sur un mobile
+
+            if ($(window).width() < 700) {
+                $(".errors").css("font-size", "0.8em");
+            };
+
+
         }
         $(".errors").empty();
         $(".errors").append("<i class='fa fa-exclamation-triangle'></i>");
