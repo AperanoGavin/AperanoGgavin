@@ -5,7 +5,7 @@ var submit = form.querySelector('input[type="submit"]');
 var error = document.querySelector('.error');
 var errorText = document.querySelector('.error-text');
 var errorIcon = document.querySelector('.error-icon');
-
+var email = form.querySelector('input[type="email"]');
 //quand on click sur submit on vérifie si les inputs sont remplis sinon on affiche un message d'erreur
 submit.addEventListener('click', function(e) {
     e.preventDefault();
@@ -38,5 +38,14 @@ submit.addEventListener('click', function(e) {
         //suprimer $newDiv
         $(".errors").remove();
 
+    }
+});
+
+//si t[type="email"]') on remarque que l'email n'est pas valide  on rend le text mis dans l'input rouge
+email.addEventListener('input', function() {
+    if (email.validity.typeMismatch) {
+        email.style.color = 'red';
+    } else {
+        email.style.color = 'black';
     }
 });
