@@ -10,7 +10,7 @@ function showMenu() {
 }
 
 function hideMenu() {
-    navLink.style.right = "-200px";
+    navLink.style.right = "-400px";
     //rendre le humburger menu visible
     menu.style.display = "block";
     //location.reload();
