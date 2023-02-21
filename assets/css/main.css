@@ -758,19 +758,24 @@ input {
   cursor: pointer;
 }
 
+.form-connexion-input-submit span {
+  font-size: 15px;
+  cursor: pointer;
+}
+
 a {
   color: #fff;
   text-decoration: none;
 }
 
 .link {
-  color: #007bff;
+  color: #6c757d;
 }
 .link:hover {
-  color: #0062cc;
+  color: #545b62;
 }
 .link:active {
-  color: #3395ff;
+  color: #868e96;
 }
 
 .menu {

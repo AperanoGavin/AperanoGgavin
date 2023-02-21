@@ -5,11 +5,11 @@
         }
         
         .link {
-            color: $primary-color;
+            color: $secondary-color;
             &:hover {
-                color: darken($primary-color, 10%);
+                color: darken($secondary-color, 10%);
             }
             &:active {
-                color: lighten($primary-color, 10%);
+                color: lighten($secondary-color, 10%);
             }
         }
