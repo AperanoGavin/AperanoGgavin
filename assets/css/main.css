@@ -1071,8 +1071,9 @@ h3 {
 }
 
 .card .article_price {
+  width: 30%;
   position: absolute;
-  left: 0;
+  left: 130px;
   right: -120px;
   bottom: 0;
   margin-bottom: 15px;
