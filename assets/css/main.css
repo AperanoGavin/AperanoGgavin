@@ -572,6 +572,7 @@ button:active {
 }
 
 .button-secondary {
+  background: none;
   background-color: #6c757d;
 }
 .button-secondary:hover {
@@ -582,6 +583,7 @@ button:active {
 }
 
 .button-warning {
+  background: none;
   background-color: #ffc107;
 }
 .button-warning:hover {
@@ -592,6 +594,7 @@ button:active {
 }
 
 .button-info {
+  background: none;
   background-color: #17a2b8;
 }
 .button-info:hover {
@@ -602,6 +605,7 @@ button:active {
 }
 
 .button-success {
+  background: none;
   background-color: #28a745;
 }
 .button-success:hover {
@@ -612,6 +616,7 @@ button:active {
 }
 
 .button-extra1 {
+  background: none;
   background-color: rgb(99, 99, 194);
 }
 .button-extra1:hover {
@@ -655,16 +660,16 @@ input {
 }
 
 /* .form-connexion:nth-child(2) {
-                opacity: 1;
-                transform: translateX(500%);
-                //transition-delay: 0.4s;
-            }
+            opacity: 1;
+            transform: translateX(500%);
+            //transition-delay: 0.4s;
+        }
 
-            .form-connexion:nth-child(3) {
-                opacity: 1;
-                transform: translateX(200%);
-                //transition-delay: 0.6s;
-            } */
+        .form-connexion:nth-child(3) {
+            opacity: 1;
+            transform: translateX(200%);
+            //transition-delay: 0.6s;
+        } */
 .form-connexion:last-child, input:last-child {
   opacity: 1;
   transform: translateX(0);
@@ -723,6 +728,7 @@ input {
   padding: 20px;
   margin-bottom: -50px;
   text-align: center;
+  background: white;
 }
 
 .form-connexion-input-submit input {
