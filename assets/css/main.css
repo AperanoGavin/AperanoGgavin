@@ -1038,6 +1038,27 @@ h3 {
   height: 100%;
 }
 
+.card {
+  margin: auto;
+  text-align: center;
+  border-radius: 25px;
+  height: 200px;
+  width: 200px;
+  background: #e0e0e0;
+}
+
+.card img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  object-fit: cover;
+  background: #bab8b8;
+}
+
+.card .article_name {
+  font-weight: bold;
+}
+
 /* layers */
 .layers {
   width: 70%;

@@ -1,0 +1,23 @@
+.card {
+    margin: auto;
+    text-align: center;
+    //padding-top: 40px;
+    border-radius: 25px;
+    //le faire plus long en longueur
+    height: 200px;
+    //diminuer la largeur de la carte
+    width: 200px;
+    background: #e0e0e0;
+}
+
+.card img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
+    background: #bab8b8;
+}
+
+.card .article_name {
+    font-weight: bold;
+}
