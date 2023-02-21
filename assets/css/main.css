@@ -867,8 +867,8 @@ a {
     font-size: 14px;
   }
 }
-/* for section1 */
-.section1 {
+/* for animate_card */
+.animate_card {
   width: 75%;
   margin: auto;
   text-align: center;
@@ -894,7 +894,7 @@ p {
   justify-content: space-between;
 }
 
-.section1-col {
+.animate_card-col {
   flex-basis: 40%;
   background: #fff3f3;
   border-radius: 10px;
@@ -912,18 +912,18 @@ h3 {
   margin: 10px 0;
 }
 
-.section1-col:hover {
+.animate_card-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.section1 img {
+.animate_card img {
   width: 50%;
   object-fit: cover;
   margin-left: -350px;
   margin-top: -100px;
 }
 
-.section1 h3 {
+.animate_card h3 {
   margin-top: -60px;
   margin-left: 100px;
 }
@@ -942,34 +942,34 @@ h3 {
     flex-direction: column;
     margin-top: 0;
   }
-  .section1-col {
+  .animate_card-col {
     margin-bottom: 50%;
     flex-basis: 40%;
     width: unset;
   }
-  .section1 img {
+  .animate_card img {
     width: 50%;
     object-fit: cover;
     margin-left: -115px;
     margin-top: -50px;
   }
-  .section1 h3 {
+  .animate_card h3 {
     margin-top: -30px;
     margin-left: 50px;
   }
 }
-.section1 .row .section1-col {
+.animate_card .row .animate_card-col {
   opacity: 0;
   transform: translateX(-100%);
   transition: all 1s ease-in-out;
 }
 
-.section1.visible .row .section1-col:first-child {
+.animate_card.visible .row .animate_card-col:first-child {
   opacity: 1;
   transform: translateX(0);
 }
 
-.section1.visible .row .section1-col:last-child {
+.animate_card.visible .row .animate_card-col:last-child {
   opacity: 1;
   transform: translateX(0);
 }
