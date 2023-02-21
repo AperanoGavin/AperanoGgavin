@@ -1053,6 +1053,8 @@ h3 {
   width: 100%;
   object-fit: cover;
   background: #bab8b8;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .card .article_name {

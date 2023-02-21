@@ -16,8 +16,12 @@
     width: 100%;
     object-fit: cover;
     background: #bab8b8;
+    //rajoute un border radius en haut
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
+//deplace .card .article_name  au centre
 .card .article_name {
     font-weight: bold;
 }
