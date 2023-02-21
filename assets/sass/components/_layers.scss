@@ -1,18 +1,18 @@
-/* section2 */
+/* layers */
 
-.section2 {
+.layers {
     width: 70%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
 
-.section2 p {
+.layers p {
     //réduit la taille du texte
     font-size: 15px;
 }
 
-.section2-col {
+.layers-col {
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -20,7 +20,7 @@
     overflow: hidden;
 }
 
-img.img-section2 {
+img.img-layers {
     width: 100%;
     height: 100%;
     display: block;
@@ -59,7 +59,7 @@ img.img-section2 {
 }
 
 @media (max-width: 700px) {
-    .section2 {
+    .layers {
         //faire descendre le texte
         padding-top: 300px;
     }
