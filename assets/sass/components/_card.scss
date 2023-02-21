@@ -36,9 +36,13 @@
     width: 30%;
     position: absolute;
     left: 130px;
-    right: -120px;
-    bottom: 0;
+    //right: -120px;
+    bottom: -3px;
     margin-bottom: 15px;
-    font-weight: bold;
     font-size: small;
+    background: #88BF7F;
+    border-radius: 6px;
+    //augment en haut et en bas la marge
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

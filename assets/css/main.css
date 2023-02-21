@@ -1074,11 +1074,13 @@ h3 {
   width: 30%;
   position: absolute;
   left: 130px;
-  right: -120px;
-  bottom: 0;
+  bottom: -3px;
   margin-bottom: 15px;
-  font-weight: bold;
   font-size: small;
+  background: #88BF7F;
+  border-radius: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* layers */
