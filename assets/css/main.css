@@ -761,6 +761,7 @@ input {
 .form-connexion-input-submit span {
   font-size: 15px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 a {
