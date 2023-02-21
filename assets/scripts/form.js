@@ -1,6 +1,7 @@
 //récuperer la class form-connexion-body 
 var form = document.querySelector('.form-connexion-body');
-var eye = document.querySelector('.form-connexion-links .eye');
+var eye = document.querySelector('.eye');
+console.log(eye);
 var inputs = form.querySelectorAll('input');
 var submit = form.querySelector('input[type="submit"]');
 var error = document.querySelector('.error');
@@ -55,13 +56,19 @@ email.addEventListener('input', function() {
 //si on clique sur la variable eye on change la class de i qui est                                 <i class="fa fa-eye-slash" aria-hidden="true"></i> par fa-eye et si on reclique on change par fa-eye-slash   ete met le dans une fonction pour que je puisse l'appeler dans le code
 
 eye.addEventListener('click', function() {
-    if (eye.classList.contains('fa-eye-slash')) {
-        eye.classList.remove('fa-eye-slash');
-        eye.classList.add('fa-eye');
+    //récuperer la class de i
+    var i = eye.querySelector('i');
+    //si la class de i est fa-eye-slash on change par fa-eye
+    if (i.classList.contains('fa-eye-slash')) {
+        i.classList.remove('fa-eye-slash');
+        i.classList.add('fa-eye');
         password.type = 'text';
+        //si la class de i est fa-eye on change par fa-eye-slash
+
     } else {
-        eye.classList.remove('fa-eye');
-        eye.classList.add('fa-eye-slash');
+        i.classList.remove('fa-eye');
+        i.classList.add('fa-eye-slash');
         password.type = 'password';
+
     }
 });
