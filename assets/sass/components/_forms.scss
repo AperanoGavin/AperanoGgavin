@@ -81,7 +81,7 @@
     }
     
     .form-connexion-body {
-        margin-bottom: 20px;
+        //margin-bottom: 10px;
         display: flex;
         flex-direction: column;
         //faire remonter les inputs
@@ -90,10 +90,14 @@
     
     .form-connexion-input {
         // width: 100%;
-        padding: 20px;
+        //padding: 20px;
+        //padding-top: 20px;
+        padding-right: 20px;
+        //padding-bottom: 20px;
+        padding-left: 20px;
         border-radius: 5px;
         box-sizing: border-box;
-        margin-bottom: -50px;
+        margin-bottom: -43px;
         text-align: center;
     }
     
@@ -112,7 +116,7 @@
         padding: 20px;
         //border-radius: 15px;
         //box-sizing: border-box;
-        margin-bottom: -50px;
+        //margin-bottom: -50px;
         text-align: center;
         background: white;
     }
@@ -125,4 +129,25 @@
         margin-top: 50px;
         text-align: center;
         //margin-bottom: -100px;
+    }
+    
+    .form-connexion-links {
+        text-align: center;
+        margin-bottom: -20px;
+        //le faire descendre
+        margin-top: 50px;
+    }
+    
+    .form-connexion-links a {
+        //le decaler vers la gauche
+        margin-left: -100px;
+        font-size: small;
+        cursor: pointer;
+    }
+    
+    .form-connexion-links .eye {
+        margin-top: -23px;
+        margin-left: 220px;
+        font-size: 15px;
+        cursor: pointer;
     }
