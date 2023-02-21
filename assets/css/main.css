@@ -1046,6 +1046,7 @@ h3 {
   width: 200px;
   background: #e0e0e0;
   position: relative;
+  cursor: pointer;
 }
 
 .card img {
