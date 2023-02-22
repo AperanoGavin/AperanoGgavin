@@ -1160,10 +1160,17 @@ img.img-layers {
   left: 100px;
   overflow-x: hidden;
   padding-top: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
-.side_bar .icon {
-  color: black;
+.side_bar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=main.css.map */
