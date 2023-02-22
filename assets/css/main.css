@@ -1196,4 +1196,10 @@ img.img-layers {
   margin-left: 35px;
 }
 
+a {
+  color: black;
+  text-align: center;
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */

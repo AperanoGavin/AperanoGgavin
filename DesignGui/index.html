@@ -16,10 +16,17 @@
 </head>
 
 <body>
+    <div class="design_gui">
+        <h1>Ma page d'accueil</h1>
+        <a href="./component-form.html" onclick="loadPage('component-form.html'); return false;">Charger la page de test</a>
+        <a href="./component-layer.html" onclick="loadPage('component-layer.html'); return false;">Charger le layer</a>
+        <a href="./component-side-bar-responsive.html" onclick="loadPage('component-side-bar-responsive.html'); return false;">Charger le layer</a>
+        <a href="./component-without-live.html" onclick="loadPage('component-without-live.html'); return false;">Charger le layer</a>
+        <a href="./layout-navbar.html" onclick="loadPage('layout-navbar.html'); return false;">Charger le layer</a>
+    </div>
 
-    <h1>Ma page d'accueil</h1>
-    <a style="color: black;" href="./component-form.html" onclick="loadPage('component-form.html'); return false;">Charger la page de test</a>
-    <div id="content"></div>
+
+    <div id="content" style="background-color: gray;"></div>
 
     <script>
         function loadPage(url) {
