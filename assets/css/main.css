@@ -1152,7 +1152,6 @@ img.img-layers {
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: -100px;
-  width: 100px;
   height: 80%;
   position: fixed;
   z-index: 1;
@@ -1165,12 +1164,16 @@ img.img-layers {
 }
 
 .side_bar a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 25px 8px 15px;
   text-decoration: none;
   font-size: 15px;
   color: #818181;
   display: block;
   transition: 0.3s;
+}
+
+.side_bar img {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
