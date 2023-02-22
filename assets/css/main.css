@@ -1170,6 +1170,7 @@ img.img-layers {
   color: #818181;
   display: block;
   transition: 0.3s;
+  margin-bottom: 10px;
 }
 
 .side_bar img {
