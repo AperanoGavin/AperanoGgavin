@@ -1180,6 +1180,7 @@ img.img-layers {
 
 .side_bar span {
   display: none;
+  transition: opacity 3s ease-in-out;
 }
 
 .side_bar a:hover + span,
@@ -1190,10 +1191,6 @@ img.img-layers {
   margin-top: -20px;
   margin-right: 10px;
   margin-left: 35px;
-}
-
-.side_bar a:hover ~ span {
-  display: none;
 }
 
 /* .side_bar span {

@@ -33,6 +33,7 @@
 
 .side_bar span {
     display: none;
+    transition: opacity 3s ease-in-out;
 }
 
 .side_bar a:hover+span,
@@ -43,12 +44,6 @@
     margin-top: -20px;
     margin-right: 10px;
     margin-left: 35px;
-    // background-color: #264F36;
-    //background-color: #ff0000;
-}
-
-.side_bar a:hover~span {
-    display: none;
 }
 
 
