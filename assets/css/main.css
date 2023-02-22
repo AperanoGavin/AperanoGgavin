@@ -1146,5 +1146,24 @@ img.img-layers {
     padding-top: 300px;
   }
 }
+.side_bar {
+  display: block;
+  background-color: #264F36;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: -100px;
+  width: 100px;
+  height: 80%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 100px;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.side_bar .icon {
+  color: black;
+}
 
 /*# sourceMappingURL=main.css.map */
