@@ -1,5 +1,6 @@
 .side_bar {
     display: block;
+    //background-color: transparent;
     background-color: #264F36;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -19,7 +20,7 @@
 .side_bar a {
     padding: 8px 25px 8px 15px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 8px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -29,3 +30,39 @@
 .side_bar img {
     display: block;
 }
+
+.side_bar span {
+    display: none;
+}
+
+.side_bar a:hover+span,
+.side_bar a:hover>span {
+    float: right;
+    display: block;
+    font-size: 8px;
+    margin-top: -20px;
+    margin-right: 10px;
+    margin-left: 35px;
+    background-color: #264F36;
+}
+
+
+/* .side_bar span:hover {
+    float: right;
+    display: block;
+    font-size: 8px;
+    margin-top: -20px;
+    margin-right: 10px;
+    margin-left: 35px;
+} */
+
+
+/* .side_bar span {
+    float: right;
+    display: block;
+    font-size: 8px;
+    margin-top: -20px;
+    margin-right: 10px;
+    margin-left: 35px;
+     Ajout de cette ligne pour déplacer le span vers la droite  
+    }*/
