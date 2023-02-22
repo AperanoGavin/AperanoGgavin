@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body,
 html {
   margin: 0;
@@ -1185,27 +1184,16 @@ img.img-layers {
 
 .side_bar span {
   display: none;
-  transition: opacity 3s ease-in-out;
 }
 
 .side_bar a:hover + span,
 .side_bar a:hover > span {
   float: right;
   display: block;
-  font-size: 8px;
+  font-size: 10px;
   margin-top: -20px;
   margin-right: 10px;
   margin-left: 35px;
 }
-
-/* .side_bar span {
-    float: right;
-    display: block;
-    font-size: 8px;
-    margin-top: -20px;
-    margin-right: 10px;
-    margin-left: 35px;
-     Ajout de cette ligne pour déplacer le span vers la droite  
-    }*/
 
 /*# sourceMappingURL=main.css.map */

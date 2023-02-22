@@ -27,7 +27,7 @@
     margin-bottom: 10px;
 }
 
-//quand supérieur à 700px .side_bar a le margin-bottom passe à 0
+//quand supérieur à 700px .side_bar a le margin-bottom passe à 20px
 @media screen and (min-width: 700px) {
     .side_bar a {
         margin-bottom: 20px;
@@ -40,26 +40,16 @@
 
 .side_bar span {
     display: none;
-    transition: opacity 3s ease-in-out;
+    //transition: opacity 3s ease-in-out;
 }
 
 .side_bar a:hover+span,
 .side_bar a:hover>span {
     float: right;
     display: block;
-    font-size: 8px;
+    font-size: 10px;
     margin-top: -20px;
     margin-right: 10px;
     margin-left: 35px;
+    //remove le background-color dans  
 }
-
-
-/* .side_bar span {
-    float: right;
-    display: block;
-    font-size: 8px;
-    margin-top: -20px;
-    margin-right: 10px;
-    margin-left: 35px;
-     Ajout de cette ligne pour déplacer le span vers la droite  
-    }*/
