@@ -1174,6 +1174,11 @@ img.img-layers {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 700px) {
+  .side_bar a {
+    margin-bottom: 20px;
+  }
+}
 .side_bar img {
   display: block;
 }

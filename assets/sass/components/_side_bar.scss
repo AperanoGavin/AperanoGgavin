@@ -27,6 +27,13 @@
     margin-bottom: 10px;
 }
 
+//quand supérieur à 700px .side_bar a le margin-bottom passe à 0
+@media screen and (min-width: 700px) {
+    .side_bar a {
+        margin-bottom: 20px;
+    }
+}
+
 .side_bar img {
     display: block;
 }
