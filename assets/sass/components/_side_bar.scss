@@ -43,18 +43,13 @@
     margin-top: -20px;
     margin-right: 10px;
     margin-left: 35px;
-    background-color: #264F36;
+    // background-color: #264F36;
+    //background-color: #ff0000;
 }
 
-
-/* .side_bar span:hover {
-    float: right;
-    display: block;
-    font-size: 8px;
-    margin-top: -20px;
-    margin-right: 10px;
-    margin-left: 35px;
-} */
+.side_bar a:hover~span {
+    display: none;
+}
 
 
 /* .side_bar span {
