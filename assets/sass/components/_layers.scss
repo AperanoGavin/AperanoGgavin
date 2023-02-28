@@ -12,6 +12,12 @@
     font-size: 15px;
 }
 
+.row_layers {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .layers-col {
     flex-basis: 32%;
     border-radius: 10px;
@@ -62,5 +68,10 @@ img.img-layers {
     .layers {
         //faire descendre le texte
         padding-top: 300px;
+    }
+    .row_layers {
+        margin-top: 5%;
+        display: unset;
+        justify-content: space-between;
     }
 }

@@ -20,7 +20,7 @@
         padding: 10px;
     }
     
-    .row {
+    .row_animate_card {
         margin-top: 5%;
         display: flex;
         justify-content: space-between;
@@ -102,18 +102,18 @@
     }
     
     //animation
-    .animate_card .row .animate_card-col {
+    .animate_card .row_animate_card .animate_card-col {
         opacity: 0;
         transform: translateX(-100%);
         transition: all 1s ease-in-out;
     }
     
-    .animate_card.visible .row .animate_card-col:first-child {
+    .animate_card.visible .row_animate_card .animate_card-col:first-child {
         opacity: 1;
         transform: translateX(0);
     }
     
-    .animate_card.visible .row .animate_card-col:last-child {
+    .animate_card.visible .row_animate_card .animate_card-col:last-child {
         opacity: 1;
         transform: translateX(0);
     }
