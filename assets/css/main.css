@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body,
 html {
   margin: 0;
@@ -1149,7 +1150,7 @@ img.img-layers {
 .side_bar {
   display: block;
   background-color: #264F36;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 50px;
   margin-left: -100px;
   height: 80%;
@@ -1223,6 +1224,15 @@ a {
 
 h1 {
   text-align: center;
+}
+
+.content {
+  margin-left: 220px;
+  /* la même largeur que la barre latérale */
+  overflow-y: scroll;
+  /* permet de faire défiler le contenu si nécessaire */
+  height: calc(100vh - 80px);
+  /* calcul la hauteur restante de la page pour que le contenu prenne tout l'espace disponible */
 }
 
 /*# sourceMappingURL=main.css.map */
