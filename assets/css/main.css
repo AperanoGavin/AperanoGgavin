@@ -1050,6 +1050,10 @@ h3 {
   cursor: pointer;
 }
 
+img {
+  height: 80%;
+}
+
 .card img {
   display: block;
   margin: auto;
