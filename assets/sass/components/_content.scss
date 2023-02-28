@@ -7,3 +7,12 @@
     height: calc(100vh - 80px);
     /* calcul la hauteur restante de la page pour que le contenu prenne tout l'espace disponible */
 }
+
+@media(max-width: 700px) {
+    .content {
+        margin-left: 150px;
+        overflow-y: scroll;
+        /* permet de faire défiler le contenu si nécessaire */
+        height: calc(100vh - 80px);
+    }
+}
