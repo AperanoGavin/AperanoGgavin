@@ -1051,6 +1051,13 @@ h3 {
   margin-bottom: 10px;
 }
 
+.row {
+  margin-right: 4%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
 img {
   height: 80%;
 }
