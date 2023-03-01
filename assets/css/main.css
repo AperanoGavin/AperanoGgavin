@@ -1238,6 +1238,7 @@ img.img-layers {
 .design_gui {
   width: 30%;
   height: 100%;
+  border-right: 2px solid #673a2f;
 }
 
 a {
