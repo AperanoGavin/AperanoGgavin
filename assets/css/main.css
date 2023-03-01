@@ -1238,6 +1238,10 @@ img.img-layers {
 .design_gui {
   width: 30%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-right: 2px solid #673a2f;
 }
 
