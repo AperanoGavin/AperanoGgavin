@@ -1281,6 +1281,13 @@ h1 {
     /* permet de faire défiler le contenu si nécessaire */
     height: calc(100vh - 80px);
   }
+  .content section h1 {
+    margin-left: -27%;
+  }
+  .content section p {
+    width: 90%;
+    margin-left: -2%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

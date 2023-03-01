@@ -1,28 +1,35 @@
-    .content {
-        margin-left: 220px;
-        /* la même largeur que la barre latérale */
-        //padding: 20px;
-        overflow-y: scroll;
-        /* permet de faire défiler le contenu si nécessaire */
-        height: calc(100vh - 80px);
-        /* calcul la hauteur restante de la page pour que le contenu prenne tout l'espace disponible */
-    }
-    
-    .content section h1 {
-        color: white;
-    }
-    
-    .content section p {
-        color: white;
-        width: 50%;
-        margin-left: 25%;
-    }
-    
-    @media(max-width: 700px) {
         .content {
-            margin-left: 150px;
+            margin-left: 220px;
+            /* la même largeur que la barre latérale */
+            //padding: 20px;
             overflow-y: scroll;
             /* permet de faire défiler le contenu si nécessaire */
             height: calc(100vh - 80px);
+            /* calcul la hauteur restante de la page pour que le contenu prenne tout l'espace disponible */
         }
-    }
+        
+        .content section h1 {
+            color: white;
+        }
+        
+        .content section p {
+            color: white;
+            width: 50%;
+            margin-left: 25%;
+        }
+        
+        @media(max-width: 700px) {
+            .content {
+                margin-left: 150px;
+                overflow-y: scroll;
+                /* permet de faire défiler le contenu si nécessaire */
+                height: calc(100vh - 80px);
+            }
+            .content section h1 {
+                margin-left: -27%;
+            }
+            .content section p {
+                width: 90%;
+                margin-left: -2%;
+            }
+        }
