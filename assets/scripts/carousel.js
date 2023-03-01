@@ -8,12 +8,10 @@ let currentImageIndex = 0;
 function showImage(index) {
     images.forEach(image => image.classList.remove('active'));
     images[index].classList.add('active');
+    //mettre aux autres la classe hidden
     currentImageIndex = index;
 
-
-
 }
-
 prevButton.addEventListener('click', () => {
     const prevImageIndex = (currentImageIndex - 1 + imageCount) % imageCount;
     showImage(prevImageIndex);

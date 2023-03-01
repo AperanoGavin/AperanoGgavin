@@ -1338,4 +1338,14 @@ h1 {
   right: 0;
 }
 
+.active {
+  display: block;
+  /* ou tout autre style que vous souhaitez appliquer pour afficher l'image */
+}
+
+.hidden {
+  display: none;
+  /* ou tout autre style que vous souhaitez appliquer pour cacher l'image */
+}
+
 /*# sourceMappingURL=main.css.map */
