@@ -1264,6 +1264,16 @@ h1 {
   /* calcul la hauteur restante de la page pour que le contenu prenne tout l'espace disponible */
 }
 
+.content section h1 {
+  color: white;
+}
+
+.content section p {
+  color: white;
+  width: 50%;
+  margin-left: 25%;
+}
+
 @media (max-width: 700px) {
   .content {
     margin-left: 150px;

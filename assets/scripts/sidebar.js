@@ -7,6 +7,9 @@ liens.forEach(lien => {
         Allsections.forEach(section => {
             if (section.id === idSection) {
                 //faire remonter le scroll au début de la section
+                section.style.scrollBehavior = "smooth";
+
+                // Faire remonter le scroll au début de la section
                 section.scrollIntoView();
 
             } else {
