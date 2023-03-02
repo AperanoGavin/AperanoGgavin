@@ -1315,6 +1315,10 @@ h1 {
   vertical-align: middle;
 }
 
+.carousel-images img {
+  width: 100%;
+}
+
 .carousel-container {
   max-width: 1000px;
   position: relative;
