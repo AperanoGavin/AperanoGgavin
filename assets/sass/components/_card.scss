@@ -73,3 +73,19 @@
                 margin-right: 4%;
             }
         }
+        
+        @media(max-width: 900px) {
+            .row {
+                display: inline-block;
+                /*  width: 98%;
+                margin-right: 4%; */
+            }
+        }
+        
+        @media(max-width: 1200px) {
+            .row {
+                display: inline-block;
+                /*  width: 98%;
+                margin-right: 4%; */
+            }
+        }
