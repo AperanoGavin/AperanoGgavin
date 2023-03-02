@@ -64,14 +64,34 @@
 
 
         </nav>
-        <div class="carousel">
-            <ul>
-                <li><img src="./assets/images/rest-1.png" alt="image 1"></li>
-                <li><img src="./assets/images/rest-2.png" alt="image 2"></li>
-                <li><img src="./assets/images/rest-3.png" alt="image 3"></li>
-            </ul>
-            <button class="carousel__prev"></button>
-            <button class="carousel__next"></button>
+
+        <div class="carousel-container">
+
+            <div class="mySlides fade">
+                <img src="./assets/images/rest-1.png" style="width:100%">
+                <div class="text">Paris</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./assets/images/rest-2.png" style="width:100%">
+                <div class="text">Bruxel</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./assets/images/rest-3.png" style="width:100%">
+                <div class="text">Gabon</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
     </section>
@@ -79,7 +99,6 @@
 
     <script>
     </script>
-
 
     <script src="./assets/scripts/animate_card.js"></script>
     <script src="./assets/scripts/menu.js"></script>

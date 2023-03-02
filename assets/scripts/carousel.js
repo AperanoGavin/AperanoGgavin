@@ -1,25 +1,26 @@
-const prevButton = document.querySelector('.carousel__prev');
-const nextButton = document.querySelector('.carousel__next');
-const carousel = document.querySelector('.carousel');
-const images = carousel.querySelectorAll('img');
-const imageCount = images.length;
-let currentImageIndex = 0;
+let slideIndex = 1;
+showSlides(slideIndex);
 
-function showImage(index) {
-    images.forEach(image => image.classList.remove('active'));
-    images[index].classList.add('active');
-    //mettre aux autres la classe hidden
-    currentImageIndex = index;
-
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
-prevButton.addEventListener('click', () => {
-    const prevImageIndex = (currentImageIndex - 1 + imageCount) % imageCount;
-    showImage(prevImageIndex);
-});
 
-nextButton.addEventListener('click', () => {
-    const nextImageIndex = (currentImageIndex + 1) % imageCount;
-    showImage(nextImageIndex);
-});
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-showImage(currentImageIndex);
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
