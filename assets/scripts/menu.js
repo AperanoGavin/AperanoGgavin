@@ -57,3 +57,13 @@ fasI.classList.add("fa-times");
 fasI.id = "close";
 fasI.setAttribute("onclick", "hideCon()");
 navUser.insertBefore(fasI, navUser.firstChild);
+
+var navLink = document.getElementsByClassName("nav-link")[0];
+navLink.id = "navLink";
+
+var fasI_2 = document.createElement("i");
+fasI_2.classList.add("fas");
+fasI_2.classList.add("fa-times");
+fasI_2.id = "close";
+fasI_2.setAttribute("onclick", "hideMenu()");
+navLink.insertBefore(fasI_2, navLink.firstChild);
