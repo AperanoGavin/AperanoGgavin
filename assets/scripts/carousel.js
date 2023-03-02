@@ -24,3 +24,16 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+var link = document.createElement("a");
+link.classList.add("prev");
+link.setAttribute("onclick", "plusSlides(-1)");
+link.innerHTML = "❮";
+document.querySelector(".carousel-container").appendChild(link);
+
+
+var linkr = document.createElement("a");
+linkr.classList.add("next");
+linkr.setAttribute("onclick", "plusSlides(1)");
+linkr.innerHTML = "❯";
+document.querySelector(".carousel-container").appendChild(linkr);
