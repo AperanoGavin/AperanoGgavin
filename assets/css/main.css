@@ -1404,13 +1404,14 @@ img.img-layers {
 }
 
 a {
-  color: black;
+  color: white;
   text-align: center;
   display: block;
 }
 
 h1 {
   text-align: center;
+  color: white;
 }
 
 .content {
