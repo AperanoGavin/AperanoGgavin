@@ -1,5 +1,8 @@
 .code {
-    width: 20%;
-    //réduire la taille de la police
-    font-size: 10px;
+    //rajouter un border radius
+    border-radius: 15px;
+    //rajouater un background
+    background: #bab8b8;
+    overflow-y: scroll;
+    height: calc(30vh - 30px);
 }
