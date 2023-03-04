@@ -1403,13 +1403,13 @@ img.img-layers {
   border-right: 2px solid #673a2f;
 }
 
-a {
+.design_gui a {
   color: white;
   text-align: center;
   display: block;
 }
 
-h1 {
+.design_gui h1 {
   text-align: center;
   color: white;
 }
