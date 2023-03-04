@@ -49,7 +49,6 @@
                     responseText = responseText.replace(/^.+\n/, "");
                     responseText = responseText.replace(/^.+\n/, "");
                     responseText = responseText.replace(/^.+\n/, "");
-
                     document.getElementById("code").innerText = responseText;
 
                 }
@@ -60,12 +59,6 @@
     </script>
     <script>
         //enlever les 3 premieres lignes de la div code
-
-        var code = document.getElementById("code").innerText;
-        var code = code.split("\n");
-        code.splice(0, 3);
-        code = code.join("\n");
-        document.getElementById("code").innerText = code;
     </script>
     <script src="../assets/scripts/form.js ">
     </script>
