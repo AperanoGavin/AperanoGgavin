@@ -34,10 +34,12 @@
 
     <div id="content" style="/*background-color: gray;*/ width: 60%; margin-left: 35%; margin-top: -18%; overflow-y: scroll;  height: calc(108vh - 80px);">
     </div>
-    <div id="code"></div>
+
 
     <script>
         function loadPage(url) {
+            //rajoute la div code au tout debut dans la div content
+            document.getElementById("content").innerHTML = "<div id='code'></div>";
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
