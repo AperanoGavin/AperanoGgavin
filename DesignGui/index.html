@@ -29,13 +29,12 @@
         <a href="./component-carousel.html" onclick="loadPage('component-carousel.html'); return false;">Carousel</a>
         <a href="./component-testimonials.html" onclick="loadPage('component-testimonials.html'); return false;">testimonials</a>
 
-
-
-
     </div>
 
 
-    <div id="content" style="/*background-color: gray;*/ width: 60%; margin-left: 35%; margin-top: -18%; overflow-y: scroll;  height: calc(108vh - 80px);"></div>
+    <div id="content" style="/*background-color: gray;*/ width: 60%; margin-left: 35%; margin-top: -18%; overflow-y: scroll;  height: calc(108vh - 80px);">
+    </div>
+    <div id="code"></div>
 
     <script>
         function loadPage(url) {
@@ -43,21 +42,23 @@
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("content").innerHTML = this.responseText;
+                    document.getElementById("code").innerText = this.responseText;
+
                 }
             };
             xhttp.open("GET", url, true);
             xhttp.send();
         }
     </script>
-    <script src="../assets/scripts/form.js"></script>
-    <script src="./assets/scripts/initMap.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_IEjM6QGiiLnJfeQPRK7Pq6hHUBhrPDo&libraries=places&callback=initMap"></script>
-    <script src="./assets/scripts/menu.js"></script>
-    <script src="./assets/scripts/audio_layers.js "></script>
-    <script src="./assets/scripts/carousel.js "></script>
-    <script src="./assets/scripts/animate_card.js "></script>
-    <script src="./assets/scripts/sidebar.js "></script>
-    <script src="./assets/scripts/animate_card.js "></script>
+    <script src="../assets/scripts/form.js "></script>
+    <script src="../assets/scripts/initMap.js "></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_IEjM6QGiiLnJfeQPRK7Pq6hHUBhrPDo&libraries=places&callback=initMap "></script>
+    <script src="../assets/scripts/menu.js "></script>
+    <script src="../assets/scripts/audio_layers.js "></script>
+    <script src="../assets/scripts/carousel.js "></script>
+    <script src="../assets/scripts/animate_card.js "></script>
+    <script src="../assets/scripts/sidebar.js "></script>
+    <script src="../assets/scripts/animate_card.js "></script>
 
 
 
