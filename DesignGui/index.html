@@ -44,7 +44,14 @@
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("content").innerHTML = this.responseText;
-                    document.getElementById("code").innerText = this.responseText;
+                    // récupère la réponse et supprime les 3 premières lignes
+                    var responseText = this.responseText;
+                    responseText = responseText.replace(/^.+\n/, "");
+                    responseText = responseText.replace(/^.+\n/, "");
+                    responseText = responseText.replace(/^.+\n/, "");
+                    responseText = responseText.replace(/^.+\n/, "");
+
+                    document.getElementById("code").innerText = responseText;
 
                 }
             };
@@ -52,7 +59,17 @@
             xhttp.send();
         }
     </script>
-    <script src="../assets/scripts/form.js "></script>
+    <script>
+        //enlever les 3 premieres lignes de la div code
+
+        var code = document.getElementById("code").innerText;
+        var code = code.split("\n");
+        code.splice(0, 3);
+        code = code.join("\n");
+        document.getElementById("code").innerText = code;
+    </script>
+    <script src="../assets/scripts/form.js ">
+    </script>
     <script src="../assets/scripts/initMap.js "></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_IEjM6QGiiLnJfeQPRK7Pq6hHUBhrPDo&libraries=places&callback=initMap "></script>
     <script src="../assets/scripts/menu.js "></script>
