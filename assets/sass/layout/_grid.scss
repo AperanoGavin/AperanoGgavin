@@ -2,11 +2,22 @@
 $grid-columns: 12;
 // Calcule la largeur de chaque colonne
 $column-width: calc(100% / $grid-columns);
-//$column-width: math.div(100%, $grid-columns);
+// Définir la marge entre les colonnes
+$gutter-width: 0.5em;
 // Boucle sur le nombre de colonnes pour générer des classes
 @for $i from 1 through $grid-columns {
     .col-#{$i} {
         width: $column-width * $i;
         float: left;
+        margin-right: $gutter-width;
+        margin-bottom: $gutter-width;
+        &:last-child {
+            margin-right: 0;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: $gutter-width;
+        }
     }
 }
