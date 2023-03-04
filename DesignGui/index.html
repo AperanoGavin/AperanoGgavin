@@ -39,7 +39,6 @@
     <script>
         function loadPage(url) {
             //rajoute la div code au tout debut dans la div content
-            document.getElementById("content").innerHTML = "<div id='code'></div>";
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
