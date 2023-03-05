@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework css</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6721551398549890" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(30, 4, 4, 0.7)), url(../assets/images/background_nba.png);">
+    <div class="design_gui">
+        <h1>Design GUI</h1>
+        <a href="./component-form.html" onclick="loadPage('component-form.html'); return false;">Formulaire</a>
+        <a href="./component-layer.html" onclick="loadPage('component-layer.html'); return false;">Layer</a>
+        <a href="./component-side-bar-responsive.html" onclick="loadPage('component-side-bar-responsive.html'); return false;">SideBar</a>
+        <a href="./component-without-live.html" onclick="loadPage('component-without-live.html'); return false;">Card</a>
+        <a href="./layout-navbar.html" onclick="loadPage('layout-navbar.html'); return false;">NavBar</a>
+        <a href="./component-animate_card.html" onclick="loadPage('component-animate_card.html'); return false;">Charger le layer</a>
+        <a href="./component-button.html" onclick="loadPage('component-button.html'); return false;">Boutton</a>
+        <a href="./component-forms.html" onclick="loadPage('component-forms.html'); return false;">Forms</a>
+        <a href="./component-carousel.html" onclick="loadPage('component-carousel.html'); return false;">Carousel</a>
+        <a href="./component-testimonials.html" onclick="loadPage('component-testimonials.html'); return false;">testimonials</a>
+
+    </div>
+
+
+    <div id="content" style="/*background-color: gray;*/ width: 60%; margin-left: 35%; margin-top: -18%; overflow-y: scroll;  height: calc(108vh - 80px);">
+    </div>
+
+
+    <script>
+        function loadPage(url) {
+            //rajoute la div code au tout debut dans la div content
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("content").innerHTML = this.responseText;
+                    // récupère la réponse et supprime les 3 premières lignes
+                    var responseText = this.responseText;
+                    responseText = responseText.replace(/^.+\n/, "");
+                    responseText = responseText.replace(/^.+\n/, "");
+                    responseText = responseText.replace(/^.+\n/, "");
+                    responseText = responseText.replace(/^.+\n/, "");
+                    document.getElementById("code").innerText = responseText;
+
+                }
+            };
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        }
+    </script>
+    <script>
+        //enlever les 3 premieres lignes de la div code
+    </script>
+    <script src="../assets/scripts/form.js ">
+    </script>
+    <script src="../assets/scripts/initMap.js "></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_IEjM6QGiiLnJfeQPRK7Pq6hHUBhrPDo&libraries=places&callback=initMap "></script>
+    <script src="../assets/scripts/menu.js "></script>
+    <script src="../assets/scripts/audio_layers.js "></script>
+    <script src="../assets/scripts/carousel.js "></script>
+    <script src="../assets/scripts/animate_card.js "></script>
+    <script src="../assets/scripts/sidebar.js "></script>
+    <script src="../assets/scripts/animate_card.js "></script>
+
+
+
+
+
+
+</body>
+
+
+</html>

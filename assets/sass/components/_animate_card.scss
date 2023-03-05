@@ -1,6 +1,6 @@
-    /* for section1 */
+    /* for animate_card */
     
-    .section1 {
+    .animate_card {
         width: 75%;
         margin: auto;
         text-align: center;
@@ -20,13 +20,13 @@
         padding: 10px;
     }
     
-    .row {
+    .row_animate_card {
         margin-top: 5%;
         display: flex;
         justify-content: space-between;
     }
     
-    .section1-col {
+    .animate_card-col {
         flex-basis: 40%;
         //centrer les éléments
         background: #fff3f3;
@@ -45,11 +45,11 @@
         margin: 10px 0;
     }
     
-    .section1-col:hover {
+    .animate_card-col:hover {
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
     }
     
-    .section1 img {
+    .animate_card img {
         width: 50%;
         object-fit: cover;
         //décaler l'image à gauche
@@ -57,7 +57,7 @@
         margin-top: -100px;
     }
     
-    .section1 h3 {
+    .animate_card h3 {
         //décaler le titre en haut
         margin-top: -60px;
         margin-left: 100px;
@@ -75,26 +75,26 @@
     }
     
     @media(max-width: 700px) {
-        .row {
+        .row_animate_card {
             flex-direction: column;
             margin-top: 0;
         }
-        .section1-col {
+        .animate_card-col {
             margin-bottom: 50%;
             flex-basis: 40%;
-            //étirer la section1-col vers la droite
+            //étirer la animate_card-col vers la droite
             // margin-left: 20%;
             //retirer l'attribut width
             width: unset;
         }
-        .section1 img {
+        .animate_card img {
             width: 50%;
             object-fit: cover;
             //décaler l'image à gauche
             margin-left: -115px;
             margin-top: -50px;
         }
-        .section1 h3 {
+        .animate_card h3 {
             //décaler le titre en haut
             margin-top: -30px;
             margin-left: 50px;
@@ -102,18 +102,18 @@
     }
     
     //animation
-    .section1 .row .section1-col {
+    .animate_card .row_animate_card .animate_card-col {
         opacity: 0;
         transform: translateX(-100%);
         transition: all 1s ease-in-out;
     }
     
-    .section1.visible .row .section1-col:first-child {
+    .animate_card.visible .row_animate_card .animate_card-col:first-child {
         opacity: 1;
         transform: translateX(0);
     }
     
-    .section1.visible .row .section1-col:last-child {
+    .animate_card.visible .row_animate_card .animate_card-col:last-child {
         opacity: 1;
         transform: translateX(0);
     }

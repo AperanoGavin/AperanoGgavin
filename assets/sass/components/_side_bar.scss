@@ -65,3 +65,58 @@
     //   width: 350px;
     //  height: 750px;
 }
+.side_bar {
+    display: block;
+    //background-color: transparent;
+    background-color: #264F36;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: -100px;
+    //width: 100px;
+    height: 80%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 100px;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.side_bar a {
+    padding: 8px 25px 8px 15px;
+    text-decoration: none;
+    font-size: 8px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 700px) {
+    .side_bar a {
+        margin-bottom: 20px;
+    }
+}
+
+//quand supérieur à 700px .side_bar a le margin-bottom passe à 20px
+.side_bar img {
+    display: block;
+}
+
+.side_bar span {
+    display: none;
+    //transition: opacity 3s ease-in-out;
+}
+
+.side_bar a:hover+span,
+.side_bar a:hover>span {
+    float: right;
+    display: block;
+    font-size: 10px;
+    margin-top: -20px;
+    margin-right: 10px;
+    margin-left: 35px;
+    //remove le background-color dans  
+}

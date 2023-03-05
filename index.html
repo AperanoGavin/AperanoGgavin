@@ -20,8 +20,7 @@
     <section class="header">
         <nav class="navbar">
             <a href="./index.html"> <img class="logo" src="./assets/images/logo_s1.png" alt="logo"></a>
-            <div class="nav-link" id="navLink">
-                <i class="fas fa-times" onclick="hideMenu()"></i>
+            <div class="nav-link">
                 <ul>
                     <li>
                         <a href="./index.html"> Nous restaurants</a>
@@ -33,7 +32,7 @@
                         <a href="./blog.html"> Blog</a>
                     </li>
                     <li>
-                        <a href="#"> Contact</a>
+                        <a href="./contact.html"> Contact</a>
                     </li>
                     <li>
                         <a href="#cta"> |</a>
@@ -43,30 +42,22 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
                     </li>
-
-                    <button onclick="location.href='./connexion.html'" class="button-warning" id="button-nav">Se
-                        connecter</button>
-                    <button onclick="location.href='./commander.html'" class="button-success"
-                        id="button-nav">Commander</button>
+                    <button onclick="location.href='./connexion.html'" class="button-warning" id="button-nav">Se connecter</button>
+                    <button onclick="location.href='./commander.html'" class="button-success" id="button-nav">Commander</button>
 
                 </ul>
             </div>
-            <div class="nav-user" id="navUser">
-                <i class="fas fa-times" onclick="hideCon()"></i>
+            <div class="nav-user">
                 <ul>
                     <li>
-                        <a href="./index.html"> Connexion</a>
+                        <a href="./connexion.html"> Connexion</a>
                     </li>
                     <li>
-                        <a href="./index.html"> Inscription</a>
+                        <a href="./inscription.html"> Inscription</a>
                     </li>
 
                 </ul>
             </div>
-
-            <i class="fa-solid fa-user" id="user" onclick="ShowCon()"></i>
-            <i class="fa-solid fa-bars" id="humberger" onclick="showMenu()"></i>
-
 
         </nav>
 
@@ -98,16 +89,16 @@
         </div>
     </section>
 
-    <section id="section1" class="section1">
+    <section id="animate_card" class="animate_card">
 
-        <div class="row">
-            <div class="section1-col" id="first-section">
+        <div class="row_animate_card">
+            <div class="animate_card-col" id="first-section">
                 <img src="./assets/images/slider1.png" alt="slider1">
                 <h3>Decouvrez nos inccontournables</h3>
                 <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolorLorem ipsum dolor sit amet
                     lorem ipsum dolor sit amet lorem ipsum dolor sit amet sit amet</p>
             </div>
-            <div class="section1-col" id="second-section-img">
+            <div class="animate_card-col" id="second-section-img">
                 <img src="./assets/images/slider2.png" alt="slider2">
                 <h3>McDonald's Recrute</h3>
                 <p>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolorLorem ipsum dolor sit amet
@@ -129,85 +120,44 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <section>
+    <section id="layers" class="layers">
+        <!-- changer le nom de la h3 pour  l'audio de ce qui est rechercher-->
 
-        <section id="section2" class="section2">
-            <!-- changer le nom de la h3 pour  l'audio de ce qui est rechercher-->
+        <h2>Pour célébrer cet événement, nous avons le plaisir de vous présenter les légendes du basket-ball Shaquille O'Neal, LeBron James et Michael Jordan.</h2>
+        <p>Shaquille O'Neal, également connu sous le nom de Shaq, est un ancien joueur de la NBA qui a marqué l'histoire du basket-ball avec ses performances exceptionnelles. LeBron James, l'un des meilleurs joueurs de l'histoire de la NBA, a remporté plusieurs
+            titres de champion avec les Cleveland Cavaliers, les Miami Heat et les Los Angeles Lakers. Michael Jordan, considéré comme l'un des plus grands joueurs de basket-ball de tous les temps, a remporté six championnats de la NBA au cours de sa
+            carrière exceptionnelle. Nous sommes excités de vous présenter notre nouvelle collaboration qui offrira une expérience inoubliable pour les fans de la NBA et de McDonald's. Restez à l'écoute pour plus d'informations sur les prochains événements
+            et produits! Cordialement, L'équipe NBA & McDonald's.</p>
 
-            <h2>Pour célébrer cet événement, nous avons le plaisir de vous présenter les légendes du basket-ball
-                Shaquille O'Neal, LeBron James et Michael Jordan.</h2>
-            <p>Shaquille O'Neal, également connu sous le nom de Shaq, est un ancien joueur de la NBA qui a marqué
-                l'histoire du basket-ball avec ses performances exceptionnelles. LeBron James, l'un des meilleurs
-                joueurs de l'histoire de la NBA, a remporté
-                plusieurs titres de champion avec les Cleveland Cavaliers, les Miami Heat et les Los Angeles Lakers.
-                Michael Jordan, considéré comme l'un des plus grands joueurs de basket-ball de tous les temps, a
-                remporté six championnats de la NBA au
-                cours de sa carrière exceptionnelle. Nous sommes excités de vous présenter notre nouvelle collaboration
-                qui offrira une expérience inoubliable pour les fans de la NBA et de McDonald's. Restez à l'écoute pour
-                plus d'informations sur les
-                prochains événements et produits! Cordialement, L'équipe NBA & McDonald's.</p>
-
-            <div class="row">
-                <div class="section2-col">
-                    <img class="img-section2" src="./assets/images/antony.jpeg">
-                    <div class="layer">
-                        <h3>Antony davis</h3>
-                    </div>
-                </div>
-                <div class="section2-col">
-                    <img class="img-section2" src="./assets/images/lebron.jpeg">
-                    <div class="layer">
-                        <h3>Lebron James </h3>
-                    </div>
-                </div>
-                <div class="section2-col">
-                    <img class="img-section2" src="./assets/images/mick.jpeg">
-                    <div class="layer">
-                        <h3>Mickal Jordan </h3>
-                    </div>
+        <div class="row_layers">
+            <div class="layers-col">
+                <img class="img-layers" src="./assets/images/antony.jpeg">
+                <div class="layer">
+                    <h3>Antony davis</h3>
                 </div>
             </div>
-
-
-        </section>
-        <!-- test col in first section
-
-            <div class="row ">
-                <div class="col-2 ">
-                    <button class="button.secondary ">
-                Subscribe
-                </button>
-                        <a class="link " href="https://www.youtube.com/channel/UCcBaoqamP8pn9_sJIyL8ULQ "> Test</a>
-                        <p class="p-italic "> lorem ipsum</p>
+            <div class="layers-col">
+                <img class="img-layers" src="./assets/images/lebron.jpeg">
+                <div class="layer">
+                    <h3>Lebron James </h3>
+                </div>
             </div>
-            <div class="col-2 ">
-                <button class="button.secondary ">
-                Subscribe
-                </button>
-                <a class="link " href="https://www.youtube.com/channel/UCcBaoqamP8pn9_sJIyL8ULQ "> Test</a>
-                <p class="p-italic "> lorem ipsum</p>
+            <div class="layers-col">
+                <img class="img-layers" src="./assets/images/mick.jpeg">
+                <div class="layer">
+                    <h3>Mickal Jordan </h3>
+                </div>
             </div>
-            <div class="col-2 ">
-                <button class="button.secondary ">
-                Subscribe
-                </button>
-                <a class="link " href="https://www.youtube.com/channel/UCcBaoqamP8pn9_sJIyL8ULQ "> Test</a>
-                <p class="p-italic "> lorem ipsum</p>
-            </div>
+        </div>
 
-            </div>
-            -->
-        <!-- contenu de la première section -->
     </section>
 
-
-    <section>
-        <!-- contenu de la deuxième section -->
-    </section>
 
     <section>
         <!-- contenu de la troisième section -->
     </section>
+
+
 
 
 
@@ -244,14 +194,12 @@
     </footer>
 
     <script>
-        //si les fonctions hideCon , ShowCon, hideMenu, showMenu ne fonctionnent pas envoyer un message d'erreur dans la console (les verifier l'espace dans les "")
-
-        //pour la section1
     </script>
 
-    <script src="./assets/scripts/animate_section1.js"></script>
+
+    <script src="./assets/scripts/animate_card.js"></script>
     <script src="./assets/scripts/menu.js"></script>
-    <script src="./assets/scripts/audio_section2.js"></script>
+    <script src="./assets/scripts/audio_layers.js"></script>
 
 </body>
 

@@ -10,7 +10,7 @@ function showMenu() {
 }
 
 function hideMenu() {
-    navLink.style.right = "-200px";
+    navLink.style.right = "-400px";
     //rendre le humburger menu visible
     menu.style.display = "block";
     //location.reload();
@@ -31,3 +31,39 @@ function hideCon() {
     //location.reload();
 
 }
+
+var navbar = document.getElementsByClassName("navbar")[0];
+var userI = document.createElement("i");
+userI.classList.add("fa-solid");
+userI.classList.add("fa-user");
+userI.id = "user";
+userI.setAttribute("onclick", "ShowCon()");
+navbar.appendChild(userI);
+
+var menuI = document.createElement("i");
+menuI.classList.add("fa-solid");
+menuI.classList.add("fa-bars");
+menuI.id = "humberger";
+menuI.setAttribute("onclick", "showMenu()");
+navbar.appendChild(menuI);
+
+
+var navUser = document.getElementsByClassName("nav-user")[0];
+navUser.id = "navUser";
+
+var fasI = document.createElement("i");
+fasI.classList.add("fas");
+fasI.classList.add("fa-times");
+fasI.id = "close";
+fasI.setAttribute("onclick", "hideCon()");
+navUser.insertBefore(fasI, navUser.firstChild);
+
+var navLink = document.getElementsByClassName("nav-link")[0];
+navLink.id = "navLink";
+
+var fasI_2 = document.createElement("i");
+fasI_2.classList.add("fas");
+fasI_2.classList.add("fa-times");
+fasI_2.id = "close";
+fasI_2.setAttribute("onclick", "hideMenu()");
+navLink.insertBefore(fasI_2, navLink.firstChild);

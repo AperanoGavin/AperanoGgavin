@@ -1,44 +1,41 @@
-input {
-    @extend .form-connexion;
-    background-color: none;
-    text-align: center;
-    border-radius: 0;
-    box-shadow: none;
-    border-color: white;
-    //transition: all 0.1s ease-in-out;
-    /* &:focus {
+    input {
+        @extend .form-connexion;
+        background-color: none;
+        text-align: center;
+        border-radius: 0;
+        box-shadow: none;
+        border-color: white;
+        //transition: all 0.1s ease-in-out;
+        /* &:focus {
         box-shadow: none;
         border-color: white;
     } */
-}
-
-.form-connexion {
-    background: linear-gradient(90deg, rgba(41, 133, 138, 0.7) 0%, rgba(123, 93, 53, 1) 35%, rgb(136, 59, 108) 100%);
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(156, 30, 30, 0.1);
-    //padding: 30px;
-    width: 70%;
-    max-width: 400px;
-    margin: 0 auto;
-    margin-top: 50px;
-    //margin-bottom: 50px;
-    //text-align: center;
-}
-
-.form-connexion {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: all 1s ease-in-out;
-}
-
-.form-connexion:nth-child(1) {
-    opacity: 1;
-    transform: translateX(0);
-    //transition-delay: 0.2s;
-}
-
-
-/* .form-connexion:nth-child(2) {
+    }
+    
+    .form-connexion {
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(156, 30, 30, 0.1);
+        //padding: 30px;
+        width: 70%;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 50px;
+        //margin-bottom: 50px;
+        //text-align: center;
+    }
+    
+    .form-connexion {
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all 1s ease-in-out;
+    }
+    
+    .form-connexion:nth-child(1) {
+        opacity: 1;
+        transform: translateX(0);
+        //transition-delay: 0.2s;
+    }
+    /* .form-connexion:nth-child(2) {
                 opacity: 1;
                 transform: translateX(500%);
                 //transition-delay: 0.4s;
@@ -49,72 +46,116 @@ input {
                 transform: translateX(200%);
                 //transition-delay: 0.6s;
             } */
-
-.form-connexion:last-child {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-//centrer form-connexion-logo
-.form-connexion-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.form-connexion-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.form-connexion-header h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: black;
-}
-
-.form-connexion-body {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    //faire remonter les inputs
-    margin-top: -70px;
-}
-
-.form-connexion-input {
-    width: 100%;
-    padding: 20px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: -50px;
-    text-align: center;
-}
-
-.form-connexion-input-submit {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-//recupère tous les inputs dans la classe form-connexion-input  
-.form-connexion-input input {
-    width: 100%;
-    padding: 20px;
-    border-radius: 15px;
-    box-sizing: border-box;
-    margin-bottom: -50px;
-    text-align: center;
-}
-
-.form-connexion-input-submit input {
-    //width: 100%;
-    padding: 20px;
-    border-radius: 15px;
-    box-sizing: border-box;
-    margin-top: 50px;
-    text-align: center;
-}
+    
+    .form-connexion:last-child {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    //centrer form-connexion-logo
+    .form-connexion-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .form-connexion-logo img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+    
+    .form-connexion-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .form-connexion-header h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    
+    .form-connexion-body {
+        //margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        //faire remonter les inputs
+        margin-top: -70px;
+    }
+    
+    .form-connexion-input {
+        // width: 100%;
+        //padding: 20px;
+        //padding-top: 20px;
+        padding-right: 20px;
+        //padding-bottom: 20px;
+        padding-left: 20px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: -43px;
+        text-align: center;
+    }
+    
+    .form-connexion-input-submit {
+        //width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    //recupère tous les inputs dans la classe form-connexion-input  
+    .form-connexion-input input {
+        // width: 100%;
+        padding: 20px;
+        //border-radius: 15px;
+        //box-sizing: border-box;
+        //margin-bottom: -50px;
+        text-align: center;
+        background: white;
+    }
+    
+    .form-connexion-input-submit input {
+        width: 90%;
+        padding: 20px;
+        border-radius: 15px;
+        box-sizing: border-box;
+        margin-top: 50px;
+        text-align: center;
+        //margin-bottom: -100px;
+    }
+    
+    .form-connexion-links {
+        text-align: center;
+        margin-bottom: -20px;
+        //le faire descendre
+        margin-top: 50px;
+    }
+    
+    .form-connexion-links a {
+        //le decaler vers la gauche
+        margin-left: -100px;
+        font-size: 12px;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .form-connexion-links .eye {
+        margin-top: -23px;
+        margin-left: 220px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .form-connexion-input-submit span {
+        font-size: 13px;
+        cursor: pointer;
+        //en bold
+        font-weight: bold;
+        color: #fff;
+    }
