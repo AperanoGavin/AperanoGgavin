@@ -1002,8 +1002,8 @@ h3 {
   }
 }
 .body-bg-products {
-  background: rgb(59, 173, 179);
-  background: linear-gradient(90deg, rgba(41, 133, 138, 0.7) 0%, rgb(123, 93, 53) 35%, rgb(136, 59, 108) 100%);
+  background: url(../images/bg-white.png) no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* section2 */
@@ -1071,7 +1071,7 @@ img.img-section2 {
 }
 .sideBar-product {
   background: url(../images/products/BigLogo.png) no-repeat bottom;
-  background-color: #DB0007;
+  background-color: #63885C;
   width: 350px;
   height: 879px;
   z-index: -1;

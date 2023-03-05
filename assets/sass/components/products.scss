@@ -1,5 +1,10 @@
 .body-bg-products{
-    background: rgb(59,173,179);
-    background: linear-gradient(90deg, rgba(41, 133, 138, 0.7) 0%, rgba(123,93,53,1) 35%, rgb(136, 59, 108) 100%); 
+    //old gradient
+    //background: rgb(59,173,179);
+    //background: linear-gradient(90deg, rgba(41, 133, 138, 0.7) 0%, rgba(123,93,53,1) 35%, rgb(136, 59, 108) 100%); 
+    //bg image center width 100 url ../images/bg-white.png
+    background:url(../images/bg-white.png) no-repeat center center fixed ;
+    background-size: cover;
+    
 }
 
