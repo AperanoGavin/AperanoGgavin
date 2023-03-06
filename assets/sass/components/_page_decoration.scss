@@ -1,0 +1,20 @@
+.page_decoration{
+    
+//make the img stick to the right of the page behind content 
+
+    position: absolute;
+    right: 0;
+    top: -46.72px;
+    bottom: 0;
+    z-index: -1;
+    width: 484.64px;
+    height: 1174.16px;
+    background: url(../images/page_decoration/decoration-background.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+
+
+}
+

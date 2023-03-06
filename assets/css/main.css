@@ -1078,16 +1078,21 @@ a {
   background-size: cover;
 }
 
+.product-page {
+  display: flex;
+}
+
 .sideBar-product {
   background: url(../images/products/BigLogo.png) no-repeat bottom;
   background-color: #63885C;
   width: 350px;
   height: 879px;
   z-index: -1;
-  margin-left: 48px;
-  margin-top: 102px;
+  margin-left: 43.17px;
+  margin-top: 31px;
   border-radius: 20px;
   display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1355,8 +1360,9 @@ h3 {
   margin: auto;
   text-align: center;
   border-radius: 15px;
-  height: 200px;
-  width: 200px;
+  height: 319px;
+  width: 275px;
+  margin-right: 70px;
   background: #e0e0e0;
   position: relative;
   cursor: pointer;
@@ -1517,10 +1523,11 @@ img.img-layers {
   width: 350px;
   height: 879px;
   z-index: -1;
-  margin-left: 48px;
-  margin-top: 102px;
+  margin-left: 43.17px;
+  margin-top: 31px;
   border-radius: 20px;
   display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1635,9 +1642,9 @@ img.img-layers {
 }
 
 .content {
-  margin-left: 220px;
+  margin-left: 450px;
+  margin-top: 86px;
   /* la même largeur que la barre latérale */
-  overflow-y: scroll;
   /* permet de faire défiler le contenu si nécessaire */
   height: calc(100vh - 80px);
   /* calcul la hauteur restante de la page pour que le contenu prenne tout l'espace disponible */
@@ -1840,6 +1847,19 @@ img.img-fourth {
   background: white;
   overflow-y: scroll;
   height: calc(30vh - 30px);
+}
+
+.page_decoration {
+  position: absolute;
+  right: 0;
+  top: -46.72px;
+  bottom: 0;
+  z-index: -1;
+  width: 484.64px;
+  height: 1174.16px;
+  background: url(../images/page_decoration/decoration-background.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 /*# sourceMappingURL=main.css.map */
