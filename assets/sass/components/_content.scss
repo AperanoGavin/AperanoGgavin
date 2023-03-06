@@ -1,6 +1,6 @@
         .content {
             margin-left: 450px;
-            margin-top: 86px;
+            margin-top: 26px;
             /* la même largeur que la barre latérale */
             //padding: 20px;
          //   overflow-y: scroll;
@@ -14,10 +14,27 @@
             text-align: center;
         }
         
+        
         .content section p {
             color: white;
             width: 50%;
             margin-left: 25%;
+        }
+
+        //create a class for the h1 in content 
+        .content h1 {
+            margin-top: 60px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 24px;
+          
+        }
+
+        .content p{
+            margin-top: 36px;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: 500;
         }
         
         @media(max-width: 700px) {

@@ -1076,6 +1076,7 @@ a {
 .body-bg-products {
   background: url(../images/bg-white.png) no-repeat center center fixed;
   background-size: cover;
+  font-family: Poppins;
 }
 
 .product-page {
@@ -1357,7 +1358,6 @@ h3 {
 }
 
 .card {
-  margin: auto;
   text-align: center;
   border-radius: 15px;
   height: 319px;
@@ -1366,7 +1366,8 @@ h3 {
   background: #e0e0e0;
   position: relative;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 44px;
+  margin-top: 55px;
 }
 
 .row {
@@ -1643,7 +1644,7 @@ img.img-layers {
 
 .content {
   margin-left: 450px;
-  margin-top: 86px;
+  margin-top: 26px;
   /* la même largeur que la barre latérale */
   /* permet de faire défiler le contenu si nécessaire */
   height: calc(100vh - 80px);
@@ -1659,6 +1660,20 @@ img.img-layers {
   color: white;
   width: 50%;
   margin-left: 25%;
+}
+
+.content h1 {
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+}
+
+.content p {
+  margin-top: 36px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 @media (max-width: 700px) {
@@ -1852,7 +1867,7 @@ img.img-fourth {
 .page_decoration {
   position: absolute;
   right: 0;
-  top: -46.72px;
+  top: -33.72px;
   bottom: 0;
   z-index: -1;
   width: 484.64px;
