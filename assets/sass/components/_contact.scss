@@ -17,7 +17,10 @@
                 margin-left: 25%;
             }
             
-            .contact form {}
+            .contact .form-group textarea {
+                width: 320px;
+                border-radius: 10px;
+            }
             
             @media(max-width: 700px) {
                 .contact section h1 {
