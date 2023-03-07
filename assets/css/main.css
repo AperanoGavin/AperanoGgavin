@@ -1619,6 +1619,7 @@ img.img-fourth {
   background: white;
   overflow-y: scroll;
   height: calc(30vh - 30px);
+  background-color: bisque;
 }
 
 .contact {
@@ -1642,6 +1643,11 @@ img.img-fourth {
 .contact .form-group textarea {
   width: 320px;
   border-radius: 10px;
+  margin-top: 50px;
+}
+
+.contact button {
+  width: 100%;
 }
 
 @media (max-width: 700px) {

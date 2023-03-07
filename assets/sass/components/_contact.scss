@@ -20,6 +20,12 @@
             .contact .form-group textarea {
                 width: 320px;
                 border-radius: 10px;
+                //faire descendre le textarea
+                margin-top: 50px;
+            }
+            
+            .contact button {
+                width: 100%;
             }
             
             @media(max-width: 700px) {
