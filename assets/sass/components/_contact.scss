@@ -1,0 +1,30 @@
+            .contact {
+                //centrer  la div 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .contact h1 {
+                color: white;
+                text-align: center;
+            }
+            
+            .contact p {
+                color: white;
+                width: 50%;
+                margin-left: 25%;
+            }
+            
+            .contact form {}
+            
+            @media(max-width: 700px) {
+                .contact section h1 {
+                    margin-left: -20%;
+                }
+                .contact section p {
+                    width: 90%;
+                    margin-left: -2%;
+                }
+            }

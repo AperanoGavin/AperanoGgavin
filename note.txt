@@ -8,3 +8,5 @@ qty =  (E - SL) / (Capital x 2%)
 *
 //réponse
 
+//
+
