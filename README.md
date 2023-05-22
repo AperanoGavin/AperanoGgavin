@@ -14,3 +14,7 @@ sass ./assets/sass/main.scss  ./assets/css/main.css
 
 
 vous pouvez voir le site en ligne sur [website of S1 - challenge stack semestriel](https://gavinaperano.me/)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AperanoGavin/AperanoGavin.github.io&type=Date)](https://star-history.com/#AperanoGavin/AperanoGavin.github.io&Date)
